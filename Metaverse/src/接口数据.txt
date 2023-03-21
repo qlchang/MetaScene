@@ -1,0 +1,447 @@
+/*****************************************************发送socket**********************************************************/
+1. 初始化：
+    {
+        "id":"init_webrtc",
+        "data":{
+            "is_mobile":true
+        }
+    }
+2. 心跳数据（定时发送）：
+    {
+        "id":"heartbeat",
+        "data":"1650851391099"
+    }
+3. 
+    {
+        "id":"answer",
+        "data":"eyJ0eXBlIjoiYW5zd2VyIiwic2RwIjoidj0wXHJcbm89LSA2MTM2MTU5NDUyMDk2Nzk0NjMxIDIgSU4gSVA0IDEyNy4wLjAuMVxyXG5zPS1cclxudD0wIDBcclxuYT1ncm91cDpCVU5ETEUgMFxyXG5hPW1zaWQtc2VtYW50aWM6IFdNU1xyXG5tPWFwcGxpY2F0aW9uIDkgVURQL0RUTFMvU0NUUCB3ZWJydGMtZGF0YWNoYW5uZWxcclxuYz1JTiBJUDQgMC4wLjAuMFxyXG5hPWljZS11ZnJhZzpMemRhXHJcbmE9aWNlLXB3ZDpncFEwTUd2SU1ObjhBcEV5NjgyVmVhV1FcclxuYT1pY2Utb3B0aW9uczp0cmlja2xlXHJcbmE9ZmluZ2VycHJpbnQ6c2hhLTI1NiAwMDo3Qzo1RTpDNzpFNzpCRDoxRjpEQjpENDpGQjo4MDo0Qzo4MzoxQTpBNjo4MTo0NjpERTo3ODo5Qzo3MTozQjpCRTpFNDozNDo3MDo2RTo3NToxQzoxRjozRDo5N1xyXG5hPXNldHVwOmFjdGl2ZVxyXG5hPW1pZDowXHJcbmE9c2N0cC1wb3J0OjUwMDBcclxuIn0="
+    }
+4. 
+    {
+        "id":"ice_candidate",
+        "data":"eyJjYW5kaWRhdGUiOiJjYW5kaWRhdGU6NDAyMjg2NjQ0NiAxIHVkcCAyMTEzOTM3MTUxIDk4ODA2YjFhLTY3NWEtNDFhMy04MWFiLTAwMWFlZmY1MDg3MC5sb2NhbCA0OTcyOSB0eXAgaG9zdCBnZW5lcmF0aW9uIDAgdWZyYWcgTHpkYSBuZXR3b3JrLWNvc3QgOTk5Iiwic2RwTWlkIjoiMCIsInNkcE1MaW5lSW5kZXgiOjB9"
+    }
+5. 
+    {
+        "id":"start",
+		"room_id":"e629ef3e-022d-4e64-8654-703bb96410eb",               //默认是e629ef3e-022d-4e64-8654-703bb96410eb，一般通过url上的参数给
+        "user_id":"2f60ea15cbd5a",
+						"trace_id":"8277b58d-b119-4517-adfb-7263944e361c",
+        "data":"{
+            "avatar_id":"KGe_Boy",
+            "skin_id":"10092",
+            "is_host":false,
+            "skin_data_version":"1009200001",
+            "rotation_render_type":1,
+            "is_all_sync":true,
+            "nick_name":"2f60ea15cbd5a",
+            "app_id":"10016",
+						"person":0,
+						"firends":"["user1"]",
+            "sync_by_event":true,
+			"area_name":"LV_Outsaid",
+			"path_name":"thirdwalk",
+            "attitude":"walk",
+            "room_type_id":"",
+            "syncToOthers":true,
+            "hasAvatar":true,
+            "prioritySync":false,
+            "extra":
+            {
+                "removeWhenDisconnected":true
+            }
+        }
+    }
+
+备注：旋转，过渡的时候，都不发送socket数据
+/*************************************************************************************************************************/
+
+
+
+
+/*****************************************************接收socket**********************************************************/
+1. 初始化：
+    {
+        "id":"init",
+        "data":"{"session_id":"14fb78972e21478fae9816d25915e436"}",
+        "room_id":"",
+        "channel_id":"",
+        "user_id":"",
+        "trace_id":"",
+        "packet_id":"0f31ec202d1945a4bba87349e723157e",
+        "session_id":"",
+        "client_os":"",
+        "fe_version":""
+    }
+2. 
+    {
+        "id":"offer",
+        "data":"eyJ0eXBlIjoib2ZmZXIiLCJzZHAiOiJ2PTBcclxubz0tIDM4NTU5NjUzNjYzMTczMDg4NTUgMTY1MDg1Mjg1MSBJTiBJUDQgMC4wLjAuMFxyXG5zPS1cclxudD0wIDBcclxuYT1maW5nZXJwcmludDpzaGEtMjU2IEQwOkY5OkIyOjNFOkIzOkE0OkJDOkI4OkZGOkFEOjZBOjZCOjU2Ojc4OkNGOjA3OjgyOjYzOkQ0OjM4OkQxOkM2OjQ4OkE5OkU1OkQwOkJGOkJDOjYyOkQ5OjQ3OkI5XHJcbmE9Z3JvdXA6QlVORExFIDBcclxubT1hcHBsaWNhdGlvbiA5IFVEUC9EVExTL1NDVFAgd2VicnRjLWRhdGFjaGFubmVsXHJcbmM9SU4gSVA0IDAuMC4wLjBcclxuYT1zZXR1cDphY3RwYXNzXHJcbmE9bWlkOjBcclxuYT1zZW5kcmVjdlxyXG5hPXNjdHAtcG9ydDo1MDAwXHJcbmE9aWNlLXVmcmFnOnFrZ3NiY1VrRlNrSEZucEdcclxuYT1pY2UtcHdkOnVVZndDZ1VVWXlhZFZTeVBUbkpHaEdaS3JCRGFqb1J3XHJcbiJ9",
+        "room_id":"",
+        "channel_id":"",
+        "user_id":"",
+        "trace_id":"",
+        "packet_id":"",
+        "session_id":"14fb78972e21478fae9816d25915e436",
+        "client_os":"",
+        "fe_version":""
+    }
+3.
+    {
+        "id":"ice_candidate",
+        "data":"eyJjYW5kaWRhdGUiOiJjYW5kaWRhdGU6MzM1MjgzMzkyMiAxIHVkcCAyMTMwNzA2NDMxIDE3Mi4xNi4xNDQuMjggMTg0NDMgdHlwIGhvc3QiLCJzZHBNaWQiOiIiLCJzZHBNTGluZUluZGV4IjowLCJ1c2VybmFtZUZyYWdtZW50IjpudWxsfQ==",
+        "room_id":"",
+        "channel_id":"",
+        "user_id":"",
+        "trace_id":"",
+        "packet_id":"2d5668fea8ca43039d3739878b5a2857",
+        "session_id":"",
+        "client_os":"",
+        "fe_version":""
+    }
+4.
+    {
+        "id":"",
+        "data":"",
+        "room_id":"",
+        "channel_id":"",
+        "user_id":"",
+        "trace_id":"",
+        "packet_id":"",
+        "session_id":"",
+        "client_os":"",
+        "fe_version":""
+    }
+5. 
+    {
+        "id":"start",
+        "data":
+        {
+            "IsHost":false,
+            "SkinID":"10092",
+            "SkinDataVersion":"1009200001",
+            "RoomTypeID":""
+        },
+											"room_id":"e629ef3e-022d-4e64-8654-703bb96410eb",
+        "channel_id":"2e67fe9faee62f04___channel",
+        "user_id":"2f60ea15cbd5a",
+											"trace_id":"2d69514a-20bf-492e-9db9-bd61bbf78ae5",
+        "packet_id":"",
+        "session_id":"14fb78972e21478fae9816d25915e436",
+        "client_os":"",
+        "fe_version":""
+    }
+6.  心跳数据（服务器定时发送）：
+    {
+        "id":"heartbeat",
+        "data":"1650852848821",
+        "room_id":"",
+        "channel_id":"",
+        "user_id":"",
+        "trace_id":"",
+        "packet_id":"",
+        "session_id":"",
+        "client_os":"",
+        "fe_version":""
+    }
+
+备注：服务器发送的数据共用一个模板
+/*************************************************************************************************************************/
+
+/*****************************************************发送webrtc**********************************************************/
+1.心跳数据（定时发送）：
+{
+	"action_type":1009,
+	"echo_msg":
+	{
+		"echoMsg":"1650886368719"
+	},
+	"trace_id":"1965cfdd-8d1c-4066-b0c2-48f85c6ba0aa",
+	"user_id":"0a3987974feb4"
+}
+2.心跳数据（定时发送）：
+{
+	"action_type":1024,
+	"getNewUserStateAction":
+	{
+		"userType":0
+	},
+	"trace_id":"4b363802-7b7a-40e6-9bf0-fa45d0db3d87",
+	"user_id":"0a3987974feb4"
+}
+3.获得呼吸点：
+{
+	"action_type":1004,
+	"get_neighbor_points_action":
+	{
+		"point":{
+			"x":-755,
+			"y":-1450,
+			"z":-34
+		},
+		"level":1,
+		"containSelf":true,
+		"searchRange":1000
+	},
+	"trace_id":"7a64ddd9-a13a-4e1e-ba36-ab287f2ce093",
+	"user_id":"72ad7d2086ddc"
+}
+4. 旋转：
+{
+	"action_type":1014,
+	"rotation_action":
+	{
+		"vertical_move":0,
+		"horizontal_move":-0.020630372492836675
+	},
+	"trace_id":"b40a894e-cd59-4db5-8d75-a8466a0c9f15",
+	"user_id":"0a3987974feb4"
+}
+5. 过渡：
+{
+	"action_type":1,
+	"clicking_action":
+	{
+		"clicking_point":{"x":-457.393553659546,"y":-1426.709199915767,"z":7.961884072222136},
+		"clicking_type":3,
+		"extra":"",
+		"attitude":"walk"
+	},
+	"clicking_state":
+	{
+		"roomTypeId":"",
+		"person":0,
+		"avatarId":"",
+		"skinId":"",
+		"roomId":"",
+		"isHost":false,
+		"isFollowHost":false,
+		"skinDataVersion":"",
+		"avatarComponents":"",
+		"nickName":"",
+		"movingMode":0,
+		"attitude":"",
+		"areaName":"",
+		"pathName":"",
+		"pathId":"",
+		"avatarSize":1,
+		"extra":"",
+		"prioritySync":false,
+		"player":
+		{
+			"position":{"x":-755,"y":-1450,"z":-34},
+			"angle":
+			{	
+				"pitch":0,"yaw":0,"roll":0
+			}
+		},
+		"camera":
+		{
+			"position":{"x":-823.0566,"y":-1577.325,"z":86},
+			"angle":{"pitch":0,"yaw":61.875,"roll":0}
+		},
+		"cameraCenter":{"x":-755,"y":-1450,"z":-34}
+	},
+	"trace_id":"739604dd-b34d-4deb-81a2-e80c3df6bdfe",
+	"user_id":"976d17b5650a5"
+}
+
+
+备注：心跳数据定时发送的时候，两次1，一次2
+/*************************************************************************************************************************/
+
+/*****************************************************接收webrtc**********************************************************/
+备注：都是二进制数据，在函数dataHandle的参数上
+
+1. 心跳数据(isHeartBeatPacket)
+2. 视频流
+3. 全景图片
+
+4.定时（来自worker）：this.decoderWorker.onmessage
+5.定时：this.inputChannel.onmessage。actionType: 1009
+6.定时：this.inputChannel.onmessage。actionType: 1024
+7. 旋转：
+{
+	"traceIds": [],
+	"vehicle": null,
+	"newUserStates": [{
+		"userId": "0ba70fda86406",
+		"playerState": {
+			"roomTypeId": "",
+			"person": 0,
+			"avatarId": "",
+			"skinId": "",
+			"roomId": "",
+			"isHost": false,
+			"isFollowHost": false,
+			"skinDataVersion": "",
+			"avatarComponents": "",
+			"nickName": "",
+			"movingMode": 0,
+			"attitude": "",
+			"areaName": "",
+			"pathName": "",
+			"pathId": "",
+			"avatarSize": 1,
+			"extra": "",
+			"prioritySync": false,
+			"player": {
+				"position": {
+					"x": -755,
+					"y": -1450,
+					"z": -34
+				},
+				"angle": {
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				}
+			},
+			"camera": {
+				"position": {
+					"x": -748.74274,
+					"y": -1577.3701,
+					"z": 86
+				},
+				"angle": {
+					"pitch": 0,
+					"yaw": 92.8125,
+					"roll": 0
+				}
+			},
+			"cameraCenter": {
+				"x": -755,
+				"y": -1450,
+				"z": -34
+			}
+		},
+		"renderInfo": {
+			"renderType": 0,
+			"videoFrame": null,
+			"cameraStateType": 0,
+			"isMoving": 0,
+			"needIfr": 0,
+			"isVideo": 0,
+			"stillFrame": 0,
+			"isRotating": 0,
+			"isFollowing": 0,
+			"clientPanoTitlesBitmap": [],
+			"clientPanoTreceId": "",
+			"prefetchVideoId": "",
+			"noMedia": false
+		},
+		"event": null,
+		"relation": 1
+	}],
+	"actionResponses": [],
+	"getStateType": 0,
+	"code": 0,
+	"msg": "OK"
+}
+8. 获取呼吸点
+{
+	"actionType":1004,
+	"pointType":100,
+	"extra":"",
+	"traceId":"5048e701-ebdb-473a-b688-6846c2f6ccdf",
+	"packetId":"",
+	"nps":[
+		{"x":235,"y":-1583.75,"z":3.5},
+		{"x":235,"y":-1550,"z":4.108108},
+		{"x":235,"y":-1514.375,"z":4.75},
+		{"x":235,"y":-1499.9999,"z":5.0090113},
+		{"x":235,"y":-1445,"z":6},
+		{"x":200,"y":-1700,"z":2.036036},
+		{"x":200,"y":-1650,"z":2.9369369},
+		{"x":200,"y":-1600,"z":3.837838},
+		{"x":200,"y":-1550,"z":4.738739},
+		{"x":200,"y":-1500,"z":5.63964},
+		{"x":200,"y":-1444.2554,"z":6},
+		{"x":176.25,"y":-1443.75,"z":6},
+		{"x":150,"y":-1865.7142,"z":-1.1428561},
+		{"x":150,"y":-1850.0001,"z":-0.8085134},
+		{"x":150,"y":-1798.5714,"z":0.28571463},
+		{"x":150,"y":-1750,"z":1.319149},
+		{"x":150,"y":-1731.4286,"z":1.7142854},
+		{"x":150,"y":-1700,"z":2.382979},
+		{"x":150,"y":-1664.2856,"z":3.142859},
+		{"x":150,"y":-1650.0001,"z":3.446806},
+		{"x":150,"y":-1597.1428,"z":4.5714293},
+		{"x":150,"y":-1550,"z":5.5744677},
+		{"x":150,"y":-1443.1917,"z":6},
+		{"x":150,"y":-1500,"z":6},
+		{"x":150,"y":-1530,"z":6},
+		{"x":117.5,"y":-1442.5,"z":6},
+		{"x":115,"y":-1495,"z":6},
+		{"x":100,"y":-1442.1277,"z":6},
+		{"x":100,"y":-1495,"z":6},
+		{"x":58.75,"y":-1441.25,"z":6},
+		{"x":57.5,"y":-1495,"z":6},
+		{"x":0,"y":-1440,"z":6},
+		{"x":0,"y":-1495,"z":6},
+		{"x":-50,"y":-1494.9999,"z":6},
+		{"x":-50,"y":-1439.3378,"z":7.324497},
+		{"x":-64.16667,"y":-1495,"z":6},
+		{"x":-68.63635,"y":-1439.091,"z":7.8181725},
+		{"x":-100,"y":-1494.9999,"z":6},
+		{"x":-100,"y":-1438.6755,"z":8.648995},
+		{"x":-128.33334,"y":-1495,"z":6},
+		{"x":-137.2727,"y":-1438.1818,"z":9.636378},
+		{"x":-150,"y":-1494.9999,"z":6},
+		{"x":-150,"y":-1438.0132,"z":9.973526},
+		{"x":-192.50002,"y":-1495,"z":6},
+		{"x":-200,"y":-1450,"z":7.936013},
+		{"x":-205.90906,"y":-1437.2727,"z":11.45455},
+		{"x":-250,"y":-1450,"z":9.084496},
+		{"x":-250,"y":-1436.6887,"z":12.622522},
+		{"x":-256.6667,"y":-1495,"z":6},
+		{"x":-274.5454,"y":-1436.3636,"z":13.272723},
+		{"x":-300,"y":-1494.9999,"z":6},
+		{"x":-300,"y":-1450,"z":10.232978},
+		{"x":-300,"y":-1436.0264,"z":13.947053},
+		{"x":-320.83337,"y":-1495,"z":6},
+		{"x":-343.1818,"y":-1435.4546,"z":15.090897},
+		{"x":-350,"y":-1494.9999,"z":6},
+		{"x":-350,"y":-1450,"z":11.38146},
+		{"x":-385,"y":-1495,"z":6},
+		{"x":-400,"y":-1450,"z":10.610336},
+		{"x":-405,"y":-1475,"z":6},
+		{"x":-411.81818,"y":-1434.5454,"z":11.454548},
+		{"x":-450,"y":-1474.9999,"z":0.8571429},
+		{"x":-450,"y":-1450,"z":3.8835106},
+		{"x":-450,"y":-1434.0398,"z":6.3973427},
+		{"x":-475,"y":-1475,"z":-2},
+		{"x":-480.45453,"y":-1433.6364,"z":2.3636398},
+		{"x":-500,"y":-1474.9999,"z":-4.8571415},
+		{"x":-500,"y":-1450,"z":-2.8433151},
+		{"x":-500,"y":-1433.3776,"z":-0.22517776},
+		{"x":-545,"y":-1475,"z":-10},
+		{"x":-549.0909,"y":-1432.7273,"z":-6.727272},
+		{"x":-550,"y":-1450,"z":-9.570139},
+		{"x":-600,"y":-1450,"z":-16.285715},
+		{"x":-600,"y":-1474.9999,"z":-16.285715},
+		{"x":-600,"y":-1432.053,"z":-13.4702},
+		{"x":-615,"y":-1475,"z":-18},
+		{"x":-617.7273,"y":-1431.8182,"z":-15.818193},
+		{"x":-650,"y":-1450,"z":-22},
+		{"x":-650,"y":-1474.9999,"z":-22},
+		{"x":-650,"y":-1431.3907,"z":-20.09272},
+		{"x":-685,"y":-1475,"z":-26},
+		{"x":-686.36365,"y":-1430.909,"z":-24.909088},
+		{"x":-700,"y":-1450,"z":-27.714287},
+		{"x":-700,"y":-1474.9999,"z":-27.714283},
+		{"x":-700,"y":-1430.7284,"z":-26.71522},
+		{"x":-755,"y":-1430,"z":-34},
+		{"x":-755,"y":-1450,"z":-34},
+		{"x":-755,"y":-1475,"z":-34}
+	],
+	"peopleNum":0,
+	"zoneId":"",
+	"echoMsg":"",
+	"reserveDetail":null,
+	"userWithAvatarList":[],
+	"newUserStates":[],
+	"code":0,
+	"msg":""
+}
+/*************************************************************************************************************************/

@@ -1,0 +1,2466 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "config": {
+            "avatars": [
+                {
+                    "id": "KGe_Boy",
+                    "name": "KGe_Boy",
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/be417650-66f7-4874-a54c-66778bfe79fb/body_man.zip",
+                    "gender": "man",
+                    "components": [
+                        {
+                            "name": "clothes",
+                            "type": "clothes",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "xiaoyuan_clothes_man",
+                                    "name": "xiaoyuan_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/356887c0-470e-48cc-8a87-42e99dd64a68/xiaoyuan_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_clothes_man",
+                                    "name": "test02_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deefbb3b-a59c-4f18-b57e-6907bdf8f483/test02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_clothes_man",
+                                    "name": "rock02_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d2d1f265-5a0b-4321-95c1-49c0294ebfe4/rock02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_clothes_man",
+                                    "name": "hiphop02_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/18c53b34-26e9-40e2-a420-24cad18abf0f/hiphop02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_clothes_man",
+                                    "name": "casual01_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1bcf50f1-7b64-4638-a1f3-1f7d1272bbbf/casual01_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_clothes_man",
+                                    "name": "casual02_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5ea28bc3-33dc-4865-879f-9d14d94722e4/casual02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_clothes_man",
+                                    "name": "casual04_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4d78c09e-67ba-4a47-99de-951d762d7605/casual04_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual05_clothes_man",
+                                    "name": "casual05_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/aba03630-21f3-4f57-8cd0-f20286120080/casual05_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday01_clothes_man",
+                                    "name": "mayday01_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/00272e64-2f46-4420-ba4f-fa774a9418f9/mayday01_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday02_clothes_man",
+                                    "name": "mayday02_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7641d7d8-9e41-43e7-94d0-3634aacf3827/mayday02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday03_clothes_man",
+                                    "name": "mayday03_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a350e237-91be-4b9a-9754-181e0654a1f0/mayday03_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday04_clothes_man",
+                                    "name": "mayday04_clothes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/87143bd8-1947-4a4a-aa2f-09094bde7812/mayday04_clothes_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "suit",
+                            "type": "suit",
+                            "suitComb": [
+                                "clothes",
+                                "pants"
+                            ],
+                            "units": [
+                                {
+                                    "id": "cityPop02_suit_man",
+                                    "name": "cityPop02_suit_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f4143f3b-18bc-4e8b-b995-4759aebedc4b/cityPop02_suit_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "hair",
+                            "type": "hair",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "cityPop02_hair_man",
+                                    "name": "cityPop02_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ad2d0582-bb04-4feb-b9b8-aed7ec32ce16/cityPop02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "xiaoyuan_hair_man",
+                                    "name": "xiaoyuan_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4739a38c-a8fc-481d-a506-d1c78354de8a/xiaoyuan_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_hair_man",
+                                    "name": "test02_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/512947c2-a0dc-401c-82c4-41b9fa2500c8/test02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_hair_man",
+                                    "name": "rock02_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c709668d-d1be-46b0-ac8c-f5121d4a203a/rock02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mux02_hair_man",
+                                    "name": "mux02_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b0097b6b-f235-43dd-82aa-de74a41e7181/mux02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_hair_man",
+                                    "name": "hiphop02_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1dff55b7-2a0a-4806-8e7c-d584e0ff3573/hiphop02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_hair_man",
+                                    "name": "casual01_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/086a2d16-9fb7-4e40-8c18-9cf5b73ec2da/casual01_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_hair_man",
+                                    "name": "casual02_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a4eeced1-ebf0-41dd-96c1-63ee59296cdc/casual02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual03_hair_man",
+                                    "name": "casual03_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b20a1357-879f-4961-8724-4b0d281514bf/casual03_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_hair_man",
+                                    "name": "casual04_hair_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7015fb3-ab26-4a52-bc2e-53cfbf8458b2/casual04_hair_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "head",
+                            "type": "head",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "head",
+                                    "name": "head",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/41736c06-3b3a-4f9b-8fc4-f78ce2e1fec8/head.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "shoes",
+                            "type": "shoes",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "xiaoyuan_shoes_man",
+                                    "name": "xiaoyuan_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f9521255-0a7b-4a9c-a32f-42baefcfe959/xiaoyuan_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_shoes_man",
+                                    "name": "test02_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/508fec79-2968-40bb-9259-43df2d253d95/test02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_shoes_man",
+                                    "name": "rock02_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d73c365c-7aa7-48bd-82c1-fb42eefbd79a/rock02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_shoes_man",
+                                    "name": "hiphop02_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deb71e7a-1923-4de9-8297-c1218d2a19be/hiphop02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "cityPop02_shoes_man",
+                                    "name": "cityPop02_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c865bf82-6b7e-492f-901e-518b0df52f4f/cityPop02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_shoes_man",
+                                    "name": "casual01_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ed05ebaa-de34-4ef4-a628-4c9da5f7143c/casual01_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_shoes_man",
+                                    "name": "casual02_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b38815d1-cff1-4165-9973-3552d3cf107f/casual02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual03_shoes_man",
+                                    "name": "casual03_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/dca67457-563c-4580-b6cd-0d2e608b2559/casual03_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_shoes_man",
+                                    "name": "casual04_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fbe0f3ba-6283-4d97-a71d-30c04290eacb/casual04_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday01_shoes_man",
+                                    "name": "mayday01_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/3ea27d19-222d-42fc-a20a-bd51650090b2/mayday01_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday02_shoes_man",
+                                    "name": "mayday02_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9168f558-d5c1-475b-b03d-acdde6dae47f/mayday02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday03_shoes_man",
+                                    "name": "mayday03_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/0b9bb2d5-c2c7-4560-a7aa-07aae1a9271d/mayday03_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday04_shoes_man",
+                                    "name": "mayday04_shoes_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/37059f82-3f08-468b-a09a-2a42ea9fc6cd/mayday04_shoes_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "pants",
+                            "type": "pants",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "xiaoyuan_pants_man",
+                                    "name": "xiaoyuan_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5250ab61-5a14-4a2a-95ad-e25fa5656501/xiaoyuan_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_pants_man",
+                                    "name": "test02_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9b7be51a-0674-4650-bfc4-8c65acc9880b/test02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_pants_man",
+                                    "name": "rock02_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7284bd3-8929-4b68-b62b-c6f9b061e9b4/rock02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_pants_man",
+                                    "name": "hiphop02_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c6287158-e3b3-4bad-99e1-39a1250e1cdd/hiphop02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_pants_man",
+                                    "name": "casual01_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/6ec3d30b-e7cc-47f4-9087-39f63a1f4da4/casual01_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_pants_man",
+                                    "name": "casual02_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/19ca5fbf-84f3-444b-82b9-1dc7d380a4f8/casual02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual03_pants_man",
+                                    "name": "casual03_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fc2bdd0b-0b4f-43dc-a535-919ce13412d7/casual03_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_pants_man",
+                                    "name": "casual04_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7bc88584-c885-401f-a7bd-c8d29efec0e5/casual04_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday01_pants_man",
+                                    "name": "mayday01_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/99ddd1ad-12e0-4659-9909-d2cd6e36c1c3/mayday01_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday02_pants_man",
+                                    "name": "mayday02_pants_man",
+                                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ec84c876-e96b-48b6-af99-577384198912/mayday02_pants_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        }
+                    ],
+                    "animations": [
+                        {
+                            "name": "Dance01",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Dance01.glb"
+                        },
+                        {
+                            "name": "Dance05",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Dance05.glb"
+                        },
+                        {
+                            "name": "RumbaDancing",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/RumbaDancing.glb"
+                        },
+                        {
+                            "name": "LockingHipHopDance",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/LockingHipHopDance.glb"
+                        },
+                        {
+                            "name": "Jump_all",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Jump_all.glb"
+                        },
+                        {
+                            "name": "Qiangtui",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Qiangtui.glb"
+                        },
+                        {
+                            "name": "Hallo",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Hallo.glb"
+                        },
+                        {
+                            "name": "Yaotou",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Yaotou.glb"
+                        },
+                        {
+                            "name": "BlowAKiss",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/BlowAKiss.glb"
+                        },
+                        {
+                            "name": "Cheering",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Cheering.glb"
+                        },
+                        {
+                            "name": "HappyIdle",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/HappyIdle.glb"
+                        },
+                        {
+                            "name": "Singing",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Singing.glb"
+                        },
+                        {
+                            "name": "Talking",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Talking.glb"
+                        },
+                        {
+                            "name": "Thankful",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Thankful.glb"
+                        },
+                        {
+                            "name": "Waving",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Waving.glb"
+                        },
+                        {
+                            "name": "StartWalking",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/StartWalking.glb"
+                        },
+                        {
+                            "name": "Running",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Running.glb"
+                        },
+                        {
+                            "name": "Walking",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Walking.glb"
+                        },
+                        {
+                            "name": "StopWalking",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/StopWalking.glb"
+                        },
+                        {
+                            "name": "TurnBack",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/TurnBack.glb"
+                        },
+                        {
+                            "name": "LeftTurn",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/LeftTurn.glb"
+                        },
+                        {
+                            "name": "Idle",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Idle.glb"
+                        },
+                        {
+                            "name": "GiftClap",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/GiftClap.glb"
+                        },
+                        {
+                            "name": "PHOTO_1",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_1.glb"
+                        },
+                        {
+                            "name": "PHOTO_2",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_2.glb"
+                        },
+                        {
+                            "name": "PHOTO_2",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_2.glb"
+                        },
+                        {
+                            "name": "PHOTO_3",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_3.glb"
+                        },
+                        {
+                            "name": "PHOTO_5",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_5.glb"
+                        },
+                        {
+                            "name": "PHOTO_7",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_7.glb"
+                        },
+                        {
+                            "name": "PHOTO_8",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_8.glb"
+                        },
+                        {
+                            "name": "PHOTO_9",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_9.glb"
+                        },
+                        {
+                            "name": "PHOTO_10",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_10.glb"
+                        },
+                        {
+                            "name": "PHOTO_11",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_11.glb"
+                        },
+                        {
+                            "name": "PHOTO_12",
+                            "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_12.glb"
+                        }
+                    ]
+                }
+            ],
+            "skins": [
+                {
+                    "id": "10089",
+                    "name": "梁启超_Cookonlymaps",
+                    "versionId": "00008",
+                    "isEnable": false,
+                    "fov": "90",
+                    "resolution": {
+                        "width": 1728,
+                        "height": 720
+                    },
+                    "assetList": [
+                        {
+                            "typeName": "MODEL",
+                            "className": "粗模",
+                            "assetId": "",
+                            "name": "ground_LQC_xverse.glb",
+                            "url": "https://app-mgt-resource-1258211750.file.myqcloud.com/model/65c92d17c07b4a92a3d4f1a9afc8f9af/ground_LQC_xverse.glb",
+                            "thumbnailUrl": ""
+                        },
+                        {
+                            "typeName": "CONFIG",
+                            "className": "环境光",
+                            "assetId": "",
+                            "name": "environment_musicfesti.env",
+                            "url": "https://app-mgt-resource-1258211750.file.myqcloud.com/config/88cfa3f473124404a6b2b9c358c6cfd0/environment_musicfesti.env",
+                            "thumbnailUrl": ""
+                        }
+                    ],
+                    "pointList": [],
+                    "routeList": [
+                        {
+                            "id": "thirdwalk",
+                            "birthPointList": [
+                                {
+                                    "player": {
+                                        "position": {
+                                            "x": "-727.49",
+                                            "y": "-1441.18",
+                                            "z": "-32.25"
+                                        },
+                                        "rotation": {
+                                            "pitch": "0.00",
+                                            "yaw": "0.00",
+                                            "roll": "0.00"
+                                        }
+                                    },
+                                    "camera": {
+                                        "position": {
+                                            "x": "-1047.49",
+                                            "y": "-1441.18",
+                                            "z": "87.75"
+                                        },
+                                        "rotation": {
+                                            "pitch": "0.00",
+                                            "yaw": "0.00",
+                                            "roll": "0.00"
+                                        }
+                                    }
+                                }
+                            ],
+                            "areaName": "LQC",
+                            "pathName": "thirdwalk",
+                            "attitude": "walk",
+                            "step": 5
+                        }
+                    ],
+                    "visibleRules": [],
+                    "animationList": [
+                        {
+                            "avatarId": "KGe_Boy",
+                            "animations": [
+                                "Dance01",
+                                "Dance05",
+                                "RumbaDancing",
+                                "LockingHipHopDance",
+                                "Jump_all",
+                                "Qiangtui",
+                                "Hallo",
+                                "Yaotou",
+                                "BlowAKiss",
+                                "Cheering",
+                                "HappyIdle",
+                                "Singing",
+                                "Talking",
+                                "Thankful",
+                                "Waving",
+                                "StartWalking",
+                                "Running",
+                                "Walking",
+                                "StopWalking",
+                                "TurnBack",
+                                "LeftTurn",
+                                "Idle",
+                                "GiftClap",
+                                "PHOTO_1",
+                                "PHOTO_2",
+                                "PHOTO_2",
+                                "PHOTO_3",
+                                "PHOTO_5",
+                                "PHOTO_7",
+                                "PHOTO_8",
+                                "PHOTO_9",
+                                "PHOTO_10",
+                                "PHOTO_11",
+                                "PHOTO_12"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "preload": {
+            "version": "20220318183823",
+            "assetTotalSize": 24248947,
+            "assetUrls": [
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/be417650-66f7-4874-a54c-66778bfe79fb/body_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 14294
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/be417650-66f7-4874-a54c-66778bfe79fb/body_man/meshes/body_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 137548
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/be417650-66f7-4874-a54c-66778bfe79fb/body_man/meshes/body_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38020
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/be417650-66f7-4874-a54c-66778bfe79fb/body_man/meshes/body_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38020
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/356887c0-470e-48cc-8a87-42e99dd64a68/xiaoyuan_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/356887c0-470e-48cc-8a87-42e99dd64a68/xiaoyuan_clothes_man/meshes/xiaoyuan_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 109876
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/356887c0-470e-48cc-8a87-42e99dd64a68/xiaoyuan_clothes_man/meshes/xiaoyuan_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 77416
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/356887c0-470e-48cc-8a87-42e99dd64a68/xiaoyuan_clothes_man/meshes/xiaoyuan_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 48004
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deefbb3b-a59c-4f18-b57e-6907bdf8f483/test02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deefbb3b-a59c-4f18-b57e-6907bdf8f483/test02_clothes_man/meshes/test02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 80208
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deefbb3b-a59c-4f18-b57e-6907bdf8f483/test02_clothes_man/meshes/test02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 61108
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deefbb3b-a59c-4f18-b57e-6907bdf8f483/test02_clothes_man/meshes/test02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 36972
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d2d1f265-5a0b-4321-95c1-49c0294ebfe4/rock02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d2d1f265-5a0b-4321-95c1-49c0294ebfe4/rock02_clothes_man/meshes/rock02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 112000
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d2d1f265-5a0b-4321-95c1-49c0294ebfe4/rock02_clothes_man/meshes/rock02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 74860
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d2d1f265-5a0b-4321-95c1-49c0294ebfe4/rock02_clothes_man/meshes/rock02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45024
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/18c53b34-26e9-40e2-a420-24cad18abf0f/hiphop02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/18c53b34-26e9-40e2-a420-24cad18abf0f/hiphop02_clothes_man/meshes/hiphop02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 97236
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/18c53b34-26e9-40e2-a420-24cad18abf0f/hiphop02_clothes_man/meshes/hiphop02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 51408
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/18c53b34-26e9-40e2-a420-24cad18abf0f/hiphop02_clothes_man/meshes/hiphop02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 43408
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1bcf50f1-7b64-4638-a1f3-1f7d1272bbbf/casual01_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1bcf50f1-7b64-4638-a1f3-1f7d1272bbbf/casual01_clothes_man/meshes/casual01_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 86408
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1bcf50f1-7b64-4638-a1f3-1f7d1272bbbf/casual01_clothes_man/meshes/casual01_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 61332
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1bcf50f1-7b64-4638-a1f3-1f7d1272bbbf/casual01_clothes_man/meshes/casual01_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 43028
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5ea28bc3-33dc-4865-879f-9d14d94722e4/casual02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5ea28bc3-33dc-4865-879f-9d14d94722e4/casual02_clothes_man/meshes/casual02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 70304
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5ea28bc3-33dc-4865-879f-9d14d94722e4/casual02_clothes_man/meshes/casual02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 56352
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5ea28bc3-33dc-4865-879f-9d14d94722e4/casual02_clothes_man/meshes/casual02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 42820
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4d78c09e-67ba-4a47-99de-951d762d7605/casual04_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4d78c09e-67ba-4a47-99de-951d762d7605/casual04_clothes_man/meshes/casual04_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 93508
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4d78c09e-67ba-4a47-99de-951d762d7605/casual04_clothes_man/meshes/casual04_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 86244
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4d78c09e-67ba-4a47-99de-951d762d7605/casual04_clothes_man/meshes/casual04_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 74736
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/aba03630-21f3-4f57-8cd0-f20286120080/casual05_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/aba03630-21f3-4f57-8cd0-f20286120080/casual05_clothes_man/meshes/casual05_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 156296
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/aba03630-21f3-4f57-8cd0-f20286120080/casual05_clothes_man/meshes/casual05_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 67920
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/aba03630-21f3-4f57-8cd0-f20286120080/casual05_clothes_man/meshes/casual05_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54264
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/00272e64-2f46-4420-ba4f-fa774a9418f9/mayday01_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/00272e64-2f46-4420-ba4f-fa774a9418f9/mayday01_clothes_man/meshes/mayday01_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 123068
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/00272e64-2f46-4420-ba4f-fa774a9418f9/mayday01_clothes_man/meshes/mayday01_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82924
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/00272e64-2f46-4420-ba4f-fa774a9418f9/mayday01_clothes_man/meshes/mayday01_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82924
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7641d7d8-9e41-43e7-94d0-3634aacf3827/mayday02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7641d7d8-9e41-43e7-94d0-3634aacf3827/mayday02_clothes_man/meshes/mayday02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 99748
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7641d7d8-9e41-43e7-94d0-3634aacf3827/mayday02_clothes_man/meshes/mayday02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 73180
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7641d7d8-9e41-43e7-94d0-3634aacf3827/mayday02_clothes_man/meshes/mayday02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64360
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a350e237-91be-4b9a-9754-181e0654a1f0/mayday03_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a350e237-91be-4b9a-9754-181e0654a1f0/mayday03_clothes_man/meshes/mayday03_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 123180
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a350e237-91be-4b9a-9754-181e0654a1f0/mayday03_clothes_man/meshes/mayday03_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64288
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a350e237-91be-4b9a-9754-181e0654a1f0/mayday03_clothes_man/meshes/mayday03_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 48500
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/87143bd8-1947-4a4a-aa2f-09094bde7812/mayday04_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/87143bd8-1947-4a4a-aa2f-09094bde7812/mayday04_clothes_man/meshes/mayday04_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 102236
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/87143bd8-1947-4a4a-aa2f-09094bde7812/mayday04_clothes_man/meshes/mayday04_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82352
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/87143bd8-1947-4a4a-aa2f-09094bde7812/mayday04_clothes_man/meshes/mayday04_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 63108
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f4143f3b-18bc-4e8b-b995-4759aebedc4b/cityPop02_suit_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f4143f3b-18bc-4e8b-b995-4759aebedc4b/cityPop02_suit_man/meshes/cityPop02_suit_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 244092
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f4143f3b-18bc-4e8b-b995-4759aebedc4b/cityPop02_suit_man/meshes/cityPop02_suit_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 77880
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f4143f3b-18bc-4e8b-b995-4759aebedc4b/cityPop02_suit_man/meshes/cityPop02_suit_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 59856
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ad2d0582-bb04-4feb-b9b8-aed7ec32ce16/cityPop02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ad2d0582-bb04-4feb-b9b8-aed7ec32ce16/cityPop02_hair_man/meshes/cityPop02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 160488
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ad2d0582-bb04-4feb-b9b8-aed7ec32ce16/cityPop02_hair_man/meshes/cityPop02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 90304
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ad2d0582-bb04-4feb-b9b8-aed7ec32ce16/cityPop02_hair_man/meshes/cityPop02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 55248
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4739a38c-a8fc-481d-a506-d1c78354de8a/xiaoyuan_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4739a38c-a8fc-481d-a506-d1c78354de8a/xiaoyuan_hair_man/meshes/xiaoyuan_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 159344
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4739a38c-a8fc-481d-a506-d1c78354de8a/xiaoyuan_hair_man/meshes/xiaoyuan_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 107008
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/4739a38c-a8fc-481d-a506-d1c78354de8a/xiaoyuan_hair_man/meshes/xiaoyuan_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 84348
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/512947c2-a0dc-401c-82c4-41b9fa2500c8/test02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 259
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/512947c2-a0dc-401c-82c4-41b9fa2500c8/test02_hair_man/meshes/test02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 228596
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/512947c2-a0dc-401c-82c4-41b9fa2500c8/test02_hair_man/meshes/test02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 325688
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/512947c2-a0dc-401c-82c4-41b9fa2500c8/test02_hair_man/meshes/test02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 312356
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c709668d-d1be-46b0-ac8c-f5121d4a203a/rock02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 259
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c709668d-d1be-46b0-ac8c-f5121d4a203a/rock02_hair_man/meshes/rock02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 278468
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c709668d-d1be-46b0-ac8c-f5121d4a203a/rock02_hair_man/meshes/rock02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 142496
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c709668d-d1be-46b0-ac8c-f5121d4a203a/rock02_hair_man/meshes/rock02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 121680
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b0097b6b-f235-43dd-82aa-de74a41e7181/mux02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 256
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b0097b6b-f235-43dd-82aa-de74a41e7181/mux02_hair_man/meshes/mux02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 234068
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b0097b6b-f235-43dd-82aa-de74a41e7181/mux02_hair_man/meshes/mux02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 105772
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b0097b6b-f235-43dd-82aa-de74a41e7181/mux02_hair_man/meshes/mux02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 94120
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1dff55b7-2a0a-4806-8e7c-d584e0ff3573/hiphop02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1dff55b7-2a0a-4806-8e7c-d584e0ff3573/hiphop02_hair_man/meshes/hiphop02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 66896
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1dff55b7-2a0a-4806-8e7c-d584e0ff3573/hiphop02_hair_man/meshes/hiphop02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 37844
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/1dff55b7-2a0a-4806-8e7c-d584e0ff3573/hiphop02_hair_man/meshes/hiphop02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 37844
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/086a2d16-9fb7-4e40-8c18-9cf5b73ec2da/casual01_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/086a2d16-9fb7-4e40-8c18-9cf5b73ec2da/casual01_hair_man/meshes/casual01_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 231376
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/086a2d16-9fb7-4e40-8c18-9cf5b73ec2da/casual01_hair_man/meshes/casual01_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 165256
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/086a2d16-9fb7-4e40-8c18-9cf5b73ec2da/casual01_hair_man/meshes/casual01_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 139056
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a4eeced1-ebf0-41dd-96c1-63ee59296cdc/casual02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a4eeced1-ebf0-41dd-96c1-63ee59296cdc/casual02_hair_man/meshes/casual02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 201592
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a4eeced1-ebf0-41dd-96c1-63ee59296cdc/casual02_hair_man/meshes/casual02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 76284
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/a4eeced1-ebf0-41dd-96c1-63ee59296cdc/casual02_hair_man/meshes/casual02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 15356
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b20a1357-879f-4961-8724-4b0d281514bf/casual03_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b20a1357-879f-4961-8724-4b0d281514bf/casual03_hair_man/meshes/casual03_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 122260
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b20a1357-879f-4961-8724-4b0d281514bf/casual03_hair_man/meshes/casual03_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 103372
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b20a1357-879f-4961-8724-4b0d281514bf/casual03_hair_man/meshes/casual03_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 57252
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7015fb3-ab26-4a52-bc2e-53cfbf8458b2/casual04_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7015fb3-ab26-4a52-bc2e-53cfbf8458b2/casual04_hair_man/meshes/casual04_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 98252
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7015fb3-ab26-4a52-bc2e-53cfbf8458b2/casual04_hair_man/meshes/casual04_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 70120
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7015fb3-ab26-4a52-bc2e-53cfbf8458b2/casual04_hair_man/meshes/casual04_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 44500
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/41736c06-3b3a-4f9b-8fc4-f78ce2e1fec8/head/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 226
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/41736c06-3b3a-4f9b-8fc4-f78ce2e1fec8/head/meshes/head.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 57232
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/41736c06-3b3a-4f9b-8fc4-f78ce2e1fec8/head/meshes/head_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38436
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/41736c06-3b3a-4f9b-8fc4-f78ce2e1fec8/head/meshes/head_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38436
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f9521255-0a7b-4a9c-a32f-42baefcfe959/xiaoyuan_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f9521255-0a7b-4a9c-a32f-42baefcfe959/xiaoyuan_shoes_man/meshes/xiaoyuan_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 139116
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f9521255-0a7b-4a9c-a32f-42baefcfe959/xiaoyuan_shoes_man/meshes/xiaoyuan_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 52336
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/f9521255-0a7b-4a9c-a32f-42baefcfe959/xiaoyuan_shoes_man/meshes/xiaoyuan_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 51720
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/508fec79-2968-40bb-9259-43df2d253d95/test02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/508fec79-2968-40bb-9259-43df2d253d95/test02_shoes_man/meshes/test02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 151964
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/508fec79-2968-40bb-9259-43df2d253d95/test02_shoes_man/meshes/test02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 60216
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/508fec79-2968-40bb-9259-43df2d253d95/test02_shoes_man/meshes/test02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 41804
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d73c365c-7aa7-48bd-82c1-fb42eefbd79a/rock02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d73c365c-7aa7-48bd-82c1-fb42eefbd79a/rock02_shoes_man/meshes/rock02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 132804
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d73c365c-7aa7-48bd-82c1-fb42eefbd79a/rock02_shoes_man/meshes/rock02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 55220
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d73c365c-7aa7-48bd-82c1-fb42eefbd79a/rock02_shoes_man/meshes/rock02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 48192
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deb71e7a-1923-4de9-8297-c1218d2a19be/hiphop02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deb71e7a-1923-4de9-8297-c1218d2a19be/hiphop02_shoes_man/meshes/hiphop02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 112868
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deb71e7a-1923-4de9-8297-c1218d2a19be/hiphop02_shoes_man/meshes/hiphop02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 62712
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/deb71e7a-1923-4de9-8297-c1218d2a19be/hiphop02_shoes_man/meshes/hiphop02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 46696
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c865bf82-6b7e-492f-901e-518b0df52f4f/cityPop02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 271
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c865bf82-6b7e-492f-901e-518b0df52f4f/cityPop02_shoes_man/meshes/cityPop02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 112832
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c865bf82-6b7e-492f-901e-518b0df52f4f/cityPop02_shoes_man/meshes/cityPop02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 62028
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c865bf82-6b7e-492f-901e-518b0df52f4f/cityPop02_shoes_man/meshes/cityPop02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45756
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ed05ebaa-de34-4ef4-a628-4c9da5f7143c/casual01_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ed05ebaa-de34-4ef4-a628-4c9da5f7143c/casual01_shoes_man/meshes/casual01_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 73184
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ed05ebaa-de34-4ef4-a628-4c9da5f7143c/casual01_shoes_man/meshes/casual01_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 58212
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ed05ebaa-de34-4ef4-a628-4c9da5f7143c/casual01_shoes_man/meshes/casual01_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 47728
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b38815d1-cff1-4165-9973-3552d3cf107f/casual02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b38815d1-cff1-4165-9973-3552d3cf107f/casual02_shoes_man/meshes/casual02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 134736
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b38815d1-cff1-4165-9973-3552d3cf107f/casual02_shoes_man/meshes/casual02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 63344
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/b38815d1-cff1-4165-9973-3552d3cf107f/casual02_shoes_man/meshes/casual02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 44436
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/dca67457-563c-4580-b6cd-0d2e608b2559/casual03_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/dca67457-563c-4580-b6cd-0d2e608b2559/casual03_shoes_man/meshes/casual03_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 78540
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/dca67457-563c-4580-b6cd-0d2e608b2559/casual03_shoes_man/meshes/casual03_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64032
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/dca67457-563c-4580-b6cd-0d2e608b2559/casual03_shoes_man/meshes/casual03_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 50972
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fbe0f3ba-6283-4d97-a71d-30c04290eacb/casual04_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fbe0f3ba-6283-4d97-a71d-30c04290eacb/casual04_shoes_man/meshes/casual04_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64556
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fbe0f3ba-6283-4d97-a71d-30c04290eacb/casual04_shoes_man/meshes/casual04_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 46704
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fbe0f3ba-6283-4d97-a71d-30c04290eacb/casual04_shoes_man/meshes/casual04_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 36992
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/3ea27d19-222d-42fc-a20a-bd51650090b2/mayday01_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/3ea27d19-222d-42fc-a20a-bd51650090b2/mayday01_shoes_man/meshes/mayday01_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 162436
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/3ea27d19-222d-42fc-a20a-bd51650090b2/mayday01_shoes_man/meshes/mayday01_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 79792
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/3ea27d19-222d-42fc-a20a-bd51650090b2/mayday01_shoes_man/meshes/mayday01_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 58364
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9168f558-d5c1-475b-b03d-acdde6dae47f/mayday02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9168f558-d5c1-475b-b03d-acdde6dae47f/mayday02_shoes_man/meshes/mayday02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 143288
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9168f558-d5c1-475b-b03d-acdde6dae47f/mayday02_shoes_man/meshes/mayday02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 76864
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9168f558-d5c1-475b-b03d-acdde6dae47f/mayday02_shoes_man/meshes/mayday02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45632
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/0b9bb2d5-c2c7-4560-a7aa-07aae1a9271d/mayday03_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/0b9bb2d5-c2c7-4560-a7aa-07aae1a9271d/mayday03_shoes_man/meshes/mayday03_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 163316
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/0b9bb2d5-c2c7-4560-a7aa-07aae1a9271d/mayday03_shoes_man/meshes/mayday03_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 89424
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/0b9bb2d5-c2c7-4560-a7aa-07aae1a9271d/mayday03_shoes_man/meshes/mayday03_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 59568
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/37059f82-3f08-468b-a09a-2a42ea9fc6cd/mayday04_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/37059f82-3f08-468b-a09a-2a42ea9fc6cd/mayday04_shoes_man/meshes/mayday04_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 143604
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/37059f82-3f08-468b-a09a-2a42ea9fc6cd/mayday04_shoes_man/meshes/mayday04_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 68416
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/37059f82-3f08-468b-a09a-2a42ea9fc6cd/mayday04_shoes_man/meshes/mayday04_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45244
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5250ab61-5a14-4a2a-95ad-e25fa5656501/xiaoyuan_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5250ab61-5a14-4a2a-95ad-e25fa5656501/xiaoyuan_pants_man/meshes/xiaoyuan_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38300
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5250ab61-5a14-4a2a-95ad-e25fa5656501/xiaoyuan_pants_man/meshes/xiaoyuan_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 28592
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/5250ab61-5a14-4a2a-95ad-e25fa5656501/xiaoyuan_pants_man/meshes/xiaoyuan_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 28592
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9b7be51a-0674-4650-bfc4-8c65acc9880b/test02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9b7be51a-0674-4650-bfc4-8c65acc9880b/test02_pants_man/meshes/test02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 50632
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9b7be51a-0674-4650-bfc4-8c65acc9880b/test02_pants_man/meshes/test02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 43396
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/9b7be51a-0674-4650-bfc4-8c65acc9880b/test02_pants_man/meshes/test02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 30748
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7284bd3-8929-4b68-b62b-c6f9b061e9b4/rock02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7284bd3-8929-4b68-b62b-c6f9b061e9b4/rock02_pants_man/meshes/rock02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 51032
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7284bd3-8929-4b68-b62b-c6f9b061e9b4/rock02_pants_man/meshes/rock02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 34824
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/d7284bd3-8929-4b68-b62b-c6f9b061e9b4/rock02_pants_man/meshes/rock02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 34824
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c6287158-e3b3-4bad-99e1-39a1250e1cdd/hiphop02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c6287158-e3b3-4bad-99e1-39a1250e1cdd/hiphop02_pants_man/meshes/hiphop02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82720
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c6287158-e3b3-4bad-99e1-39a1250e1cdd/hiphop02_pants_man/meshes/hiphop02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 59368
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/c6287158-e3b3-4bad-99e1-39a1250e1cdd/hiphop02_pants_man/meshes/hiphop02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 35764
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/6ec3d30b-e7cc-47f4-9087-39f63a1f4da4/casual01_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/6ec3d30b-e7cc-47f4-9087-39f63a1f4da4/casual01_pants_man/meshes/casual01_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 77564
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/6ec3d30b-e7cc-47f4-9087-39f63a1f4da4/casual01_pants_man/meshes/casual01_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 65304
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/6ec3d30b-e7cc-47f4-9087-39f63a1f4da4/casual01_pants_man/meshes/casual01_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45476
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/19ca5fbf-84f3-444b-82b9-1dc7d380a4f8/casual02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/19ca5fbf-84f3-444b-82b9-1dc7d380a4f8/casual02_pants_man/meshes/casual02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 60628
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/19ca5fbf-84f3-444b-82b9-1dc7d380a4f8/casual02_pants_man/meshes/casual02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 53304
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/19ca5fbf-84f3-444b-82b9-1dc7d380a4f8/casual02_pants_man/meshes/casual02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 41240
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fc2bdd0b-0b4f-43dc-a535-919ce13412d7/casual03_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fc2bdd0b-0b4f-43dc-a535-919ce13412d7/casual03_pants_man/meshes/casual03_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 65720
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fc2bdd0b-0b4f-43dc-a535-919ce13412d7/casual03_pants_man/meshes/casual03_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 53164
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/fc2bdd0b-0b4f-43dc-a535-919ce13412d7/casual03_pants_man/meshes/casual03_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 39580
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7bc88584-c885-401f-a7bd-c8d29efec0e5/casual04_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7bc88584-c885-401f-a7bd-c8d29efec0e5/casual04_pants_man/meshes/casual04_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 79472
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7bc88584-c885-401f-a7bd-c8d29efec0e5/casual04_pants_man/meshes/casual04_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 68268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/7bc88584-c885-401f-a7bd-c8d29efec0e5/casual04_pants_man/meshes/casual04_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38424
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/99ddd1ad-12e0-4659-9909-d2cd6e36c1c3/mayday01_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/99ddd1ad-12e0-4659-9909-d2cd6e36c1c3/mayday01_pants_man/meshes/mayday01_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 40240
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/99ddd1ad-12e0-4659-9909-d2cd6e36c1c3/mayday01_pants_man/meshes/mayday01_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 34648
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/99ddd1ad-12e0-4659-9909-d2cd6e36c1c3/mayday01_pants_man/meshes/mayday01_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 29800
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ec84c876-e96b-48b6-af99-577384198912/mayday02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ec84c876-e96b-48b6-af99-577384198912/mayday02_pants_man/meshes/mayday02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 65740
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ec84c876-e96b-48b6-af99-577384198912/mayday02_pants_man/meshes/mayday02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 53240
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/ec84c876-e96b-48b6-af99-577384198912/mayday02_pants_man/meshes/mayday02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 39540
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Dance01.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 583044
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Dance05.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 443164
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/RumbaDancing.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 202132
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/LockingHipHopDance.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 519188
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Jump_all.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 231724
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Qiangtui.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 155760
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Hallo.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 212168
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Yaotou.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 142104
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/BlowAKiss.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 151984
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Cheering.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 218444
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/HappyIdle.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 261428
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Singing.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 211492
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Talking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 154696
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Thankful.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 162968
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Waving.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 184924
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/StartWalking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 93184
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Running.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 107712
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Walking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 99844
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/StopWalking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 186784
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/TurnBack.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 129252
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/LeftTurn.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 87236
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/Idle.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 208772
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/GiftClap.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 230372
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_1.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54732
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54636
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_3.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54700
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_5.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54672
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_7.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54680
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_8.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54764
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_9.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54660
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_10.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54680
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_11.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54692
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/avatar/animations/Tmeland/PHOTO_12.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54684
+                },
+                {
+                    "url": "https://app-mgt-resource-1258211750.file.myqcloud.com/model/65c92d17c07b4a92a3d4f1a9afc8f9af/ground_LQC_xverse.glb",
+                    "packName": "",
+                    "typeName": "MODEL",
+                    "className": "粗模",
+                    "skinId": "10089",
+                    "size": 3638904
+                },
+                {
+                    "url": "https://app-mgt-resource-1258211750.file.myqcloud.com/config/88cfa3f473124404a6b2b9c358c6cfd0/environment_musicfesti.env",
+                    "packName": "",
+                    "typeName": "CONFIG",
+                    "className": "环境光",
+                    "skinId": "10089",
+                    "size": 2723658
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/textures/Point_Light.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 8463
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/textures/Light_tex0.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 7478
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/textures/Light_tex1.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 26724
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/textures/Light_tex2.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 28517
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/textures/VS_Disco.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 8842
+                },
+                {
+                    "url": "https://app-asset-1258211750.file.myqcloud.com/1/textures/NM_Door.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 271090
+                }
+            ],
+            "baseUrls": [],
+            "observeUrls": []
+        }
+    }
+}

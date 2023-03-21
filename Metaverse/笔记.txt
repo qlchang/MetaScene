@@ -1,0 +1,124 @@
+ActionsHandler类中，函数sendData根据用户操作发送不同的数据到服务器
+服务器接受来自sendData的请求数据后，发送视频流（通过webrtc里的inputChannel.onmessage）
+
+前端主线程接受到数据后，开始执行
+this.workers.dataHandle(r.data)  ——> unmarshalStream函数里，通过this.decoderWorker.postMessage(z, [D.buffer])将视频数据传输到worker
+worker里，通过self.onmessage接受到来自主线程的请求并开始执行，然后通过self.postMessage发送请求并传输数据（怀疑将视频流解析成每一帧的yuv数据）到主线程
+
+主线程通过decoderWorker.onmessage来接受来自worker的数据并执行，主要是执行函数：ReceiveDecodeMessage
+ReceiveDecodeMessage函数里给cachedStreams/cachedMetas/cachedPtss/cachedRender赋值（每帧的yuv数据）
+
+UpdateYUV通过定时器定时运行，并读取cachedStreams的数据，如下：
+this.cachedStreams[e] != null && this.executeFunction("stream", {
+	stream: this.cachedStreams[e],
+	width: this.cachedResolution[e].width,
+	height: this.cachedResolution[e].height,
+	pts: this.cachedPtss[e]
+});
+			
+			
+stream函数因为提前注册过，一旦调用executeFunction，就会执行registerFunction("stream")
+registerFunction("stream")里会调用updateRawYUVData
+
+updateRawYUVData函数会将stream传送到材质贴图（_videoRawYUVTexArray里）上，显示最终的效果
+
+
+handleSignal
+
+/*****************************************************************************************************************************************************************************************************************/
+
+
+
+
+旋转：
+发送数据：
+{
+	"data": {
+		"action_type": 1014,
+		"rotation_action": {
+			"vertical_move": 0,
+			"horizontal_move": -0.003703703703703704
+		}
+	},
+	"sampleRate": 0.02
+}
+
+心跳：
+发送数据：{"data":{"action_type":1009,"echo_msg":{"echoMsg":"1650272307696"}},"track":false}
+
+漫游：
+发送数据：
+{
+	"data": {
+		"action_type": 1,
+		"clicking_action": {
+			"clicking_point": {
+				"x": 1396.4945740787787,
+				"y": 2173.158025839534,
+				"z": 1.5306104000406329
+			},
+			"clicking_type": 3,
+			"extra": "",
+			"attitude": "walk"
+		},
+		"clicking_state": {
+			"roomTypeId": "",
+			"person": 0,
+			"avatarId": "",
+			"skinId": "",
+			"roomId": "",
+			"isHost": false,
+			"isFollowHost": false,
+			"skinDataVersion": "",
+			"avatarComponents": "",
+			"nickName": "",
+			"movingMode": 0,
+			"attitude": "",
+			"areaName": "",
+			"pathName": "",
+			"pathId": "",
+			"avatarSize": 1,
+			"extra": "",
+			"prioritySync": false,
+			"player": {
+				"position": {
+					"x": 1540,
+					"y": 2310,
+					"z": 0
+				},
+				"angle": {
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				}
+			},
+			"camera": {
+				"position": {
+					"x": 1939.5182,
+					"y": 2329.627,
+					"z": 150
+				},
+				"angle": {
+					"pitch": 0,
+					"yaw": 182.8125,
+					"roll": 0
+				}
+			},
+			"cameraCenter": {
+				"x": 1540,
+				"y": 2310,
+				"z": 0
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+发送数据：{"data":{"action_type":1004,"get_neighbor_points_action":{"point":{"x":1400,"y":2175,"z":0},"level":1,"containSelf":true,"searchRange":1000}}}
+
