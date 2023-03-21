@@ -1,0 +1,48 @@
+app:
+  prefix: /mnt/metaverse/scene
+  startPoint: 17
+  appId: "0000000005"
+
+log:
+  logFolder: /var/log/metaverse
+
+queueConfig:
+  move: 80
+  rotate: 2
+
+http:
+  host: '0.0.0.0'
+  port: 6688
+
+grpc:
+  url: '221.4.210.172:23000'
+# grpc:
+#   url: '192.168.0.47:3000'
+
+redis:
+  port: 6379
+  host: '47.107.125.202' #远程调试需要设置bindip 为0.0.0.0 并且设置密码
+  password: 'Happy@Pass#@!7' # 非远程不需要密码
+  decode_responses: true
+  db: 9
+# queueRedis:
+#   port: 6379
+#   host: '127.0.0.1' #远程调试需要设置bindip 为0.0.0.0 并且设置密码
+#   password: 'sxz123321SxZ@' # 非远程不需要密码
+#   decode_responses: true
+#   db: 14
+# server: ['stun:47.107.125.202:3478','stun:120.24.252.95:3478']
+#  server: ['stun:4dage:4dage168@47.107.125.202:3478','stun:120.24.252.95:3478']
+stun:
+  server: ['turn:4dage:4dage168@turn.4dage.com:4478', 'stun:120.24.252.95:3478']
+  portRangeBegin: 49152
+  portRangeEnd: 65535
+
+server:
+  private_ip: 172.18.144.42
+  public_ip: 47.107.125.202
+# PRIVATE_IP=172.18.197.114
+# PUBLIC_IP=120.24.252.95
+# STUNS_SEVER="stun:172.18.156.41:3478,stun:120.24.252.95:3478"
+# GRPC_URL="192.168.0.48:3000"
+# REDIS_URL="redis://:192.168.0.47:6379/9"
