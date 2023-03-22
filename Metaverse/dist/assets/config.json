@@ -1,0 +1,218 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "config": {
+            "avatars": [
+                {
+                    "id": "My_Actor",
+                    "name": "My_Actor",
+                    "url": "./assets/avatar/woman_0.zip",
+                    "gender": "man",
+                    "components": [],
+                    "animations": [
+                        {
+                            "name": "Walking",
+                            "url": "./assets/avatar/woman_0/animations/Walking.glb"
+                        },
+                        {
+                            "name": "Idle",
+                            "url": "./assets/avatar/woman_0/animations/Idle.glb"
+                        }
+                    ]
+                }
+            ],
+            "skins": [
+                {
+                    "id": "0000000001",
+                    "name": "梁启超_Cookonlymaps",
+                    "versionId": "00008",
+                    "isEnable": false,
+                    "fov": "90",
+                    "resolution": {
+                        "width": 1728,
+                        "height": 720
+                    },
+                    "assetList": [
+                        {
+                            "typeName": "MODEL",
+                            "className": "粗模",
+                            "assetId": "",
+                            "name": "level_L01_00006.glb",
+                            "url": "./assets/level_L01_00006.glb",
+                            "thumbnailUrl": ""
+                        },
+                        {
+                          "typeName": "MODEL",
+                          "className": "TV",
+                          "assetId": "",
+                          "name": "yqtgTV_xverse.glb",
+                          "url": "./assets/tv_0.glb",
+                          "thumbnailUrl": ""
+                        },
+                        {
+                            "typeName": "CONFIG",
+                            "className": "环境光",
+                            "assetId": "",
+                            "name": "environment_musicfesti.env",
+                            "url": "./assets/environment_musicfesti.env",
+                            "thumbnailUrl": ""
+                        }
+                    ],
+                    "pointList": [],
+                    "routeList": [
+                        {
+                            "id": "thirdwalk",
+                            "birthPointList": [
+                                {
+                                    "player": {
+                                        "position": {
+                                            "x": "-560.0",
+                                            "y": "0",
+                                            "z": "320.0"
+                                        },
+                                        "rotation": {
+                                            "pitch": "0.00",
+                                            "yaw": "0.00",
+                                            "roll": "0.00"
+                                        }
+                                    },
+                                    "camera": {
+                                        "position": {
+                                            "x": "-880.0",
+                                            "y": "0",
+                                            "z": "440.0"
+                                        },
+                                        "rotation": {
+                                            "pitch": "0.00",
+                                            "yaw": "0.00",
+                                            "roll": "0.00"
+                                        }
+                                    }
+                                }
+                            ],
+                            "areaName": "LQC",
+                            "pathName": "thirdwalk",
+                            "attitude": "walk",
+                            "step": 5
+                        }
+                    ],
+                    "visibleRules": [],
+                    "animationList": [
+                        {
+                            "avatarId": "My_Actor",
+                            "animations": [
+                                "Walking",
+                                "Idle"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "preload": {
+            "version": "20220318183823",
+            "assetTotalSize": 24248947,
+            "assetUrls": [
+                {
+                    "url": "./assets/avatar/woman_0/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 14294
+                },
+                {
+                    "url": "./assets/avatar/woman_0/body.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 137548
+                },
+                {
+                    "url": "./assets/avatar/woman_0/animations/Walking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 99844
+                },
+                {
+                    "url": "./assets/avatar/woman_0/animations/Idle.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 208772
+                },
+                {
+                    "url": "./assets/level_L01_00006.glb",
+                    "packName": "",
+                    "typeName": "MODEL",
+                    "className": "粗模",
+                    "skinId": "0000000001",
+                    "size": 3638904
+                },
+                {
+                    "url": "./assets/environment_musicfesti.env",
+                    "packName": "",
+                    "typeName": "CONFIG",
+                    "className": "环境光",
+                    "skinId": "0000000001",
+                    "size": 2723658
+                },
+                {
+                    "url": "./assets/textures/Point_Light.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 8463
+                },
+                {
+                    "url": "./assets/textures/Light_tex0.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 7478
+                },
+                {
+                    "url": "./assets/textures/Light_tex1.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 26724
+                },
+                {
+                    "url": "./assets/textures/Light_tex2.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 28517
+                },
+                {
+                    "url": "./assets/textures/VS_Disco.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 8842
+                },
+                {
+                    "url": "./assets/textures/NM_Door.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 271090
+                }
+            ],
+            "baseUrls": [],
+            "observeUrls": []
+        }
+    }
+}

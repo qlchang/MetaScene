@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四维全真漫游</title>
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+   
+    <link rel="stylesheet" href="./css/toastify.min.css" />
+    <style>
+        .loading {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff url("./assets/loading.gif") center;
+            background-repeat: no-repeat;
+            background-size: 600px 600px;
+        }
+        .tip {
+            position: absolute;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 1rem 1.6rem;
+            background-color: #5bc1d1;
+            color: white;
+            z-index: 9999;
+            border-radius: 0.2rem;
+            opacity: 1;
+            transition: opacity .2s;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Babylon.js -->
+    <script src="./libs/jquery-1.10.2.min.js"></script>
+    <script src="./libs/dat.gui.min.js"></script>
+    <script src="./libs/ammo.js"></script>
+    <script src="./libs/cannon.js"></script>
+    <script src="./libs/Oimo.js"></script>
+    <script src="./libs/earcut.min.js"></script>
+    <script src="./libs/recast.js"></script>
+
+    <script src="./libs/babylon.js"></script>
+    <script src="./libs/babylonjs.materials.min.js"></script>
+    <script src="./libs/babylonjs.proceduralTextures.min.js"></script>
+    <script src="./libs/babylonjs.postProcess.min.js"></script>
+    <script src="./libs/babylonjs.loaders.js"></script>
+    <script src="./libs/babylonjs.serializers.min.js"></script>
+    <script src="./libs/babylon.gui.min.js"></script>
+    <script src="./libs/babylon.inspector.bundle.js"></script>
+    <script src="./libs/socket.2.3.js"></script>
+    <script src="./libs/events.js"></script>
+    <script src="./libs/axios.min.js"></script>
+    <script src="./libs/VisibilityChangeHandler.js"></script>
+    <script src="./libs/decoder.js"></script>
+    <script src="./libs/nipplejs.min.js"></script>
+    <script src="./shader.js"></script>
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+    <!-- <script src="./webrtc//adapter-7.4.0.min.js"></script>
+    <script src="./webrtc/srs.sdk.js"></script> -->
+    <link rel="stylesheet" href="./css/index.cb1a6e05.css" />
+    <script>
+        // var vConsole = new window.VConsole();
+        const SERVER_URLS = {
+            DEV: "wss://sit-eks.xverse.cn/ws",
+            PROD: "wss://eks.xverse.cn/ws"
+        }
+        , REPORT_URL = {
+            DEV: "https://xa.xverse.cn:6680/collect1",
+            PROD: "https://xa.xverse.cn/collect1"
+        }
+        , MAX_RECONNECT_COUNT = 3
+        , DEFAULT_JOINROOM_TIMEOUT = 5e4
+        , DEFAULT_MAIN_CAMERA_FOV = 50
+        , DEFAULT_AVATAR_SCALE = 1
+        , REPORT_NUM_PER_REQUEST = 20
+        , DEFAULT_OPEN_TIMEOUT_MS = 6e3
+        , WS_CLOSE_NORMAL = 1e3
+        , WS_CLOSE_RECONNECT = 3008
+        , PING_INTERVAL_MS = 1e3
+        , TEXTURE_URL = "https://static.xverse.cn/qqktv/texture.png"
+        , REPORT_MODULE_TYPE = "xverse-js"
+        , authenticationErrorCodes = [3001, 3002, 3003, 3005]
+        , RTT_MAX_VALUE = 200
+        , HB_MAX_VALUE = 500
+        , DURATION = 10
+        , NET_INTERVAL = 1;
+    const VERSION$1 = "1.0.75"
+    , ENV = "production";
+  
+    const COMPONENT_LIST_PREFIX = "/component_list.json";
+
+    const debugMode = location.href.indexOf("debug") > -1  // true
+    if(debugMode){
+        var vConsole = new window.VConsole();
+    }
+
+    // 角色相关设置
+    const avatarSetting = {
+        fileType: ".glb",
+        lodType: "_lod",
+        lod: [{
+            level: "lod0",
+            fileName: ".glb",
+            quota: 5,
+            dist: 1e3
+        }, {
+            level: "lod1",
+            fileName: "_lod2.glb",
+            quota: 5,
+            dist: 2e3
+        }, {
+            level: "lod2",
+            fileName: "_lod4.glb",
+            quota: 0,
+            dist: 7500
+        }],
+        isRayCastEnable: !0,
+        maxAvatarNum: 40,       // 角色数量上限
+        maxBillBoardDist: 7500,
+        body: "body",
+        head: "head",
+        hair: "hair",
+        suit: "suit",
+        pants: "pants",
+        shoes: "shoes",
+        clothes: "clothes",
+        animations: "animations",
+        defaultIdle: "Idle",
+        cullingDistance: 200,
+        defaultMove: "Walking"
+    }
+    , avatarResources = {
+        ygb: {
+            name: "ygb",
+            mat: "NM_ygb",
+            mesh: "ygb"
+        }
+    }
+    , action = {
+        GiftClap: {
+            animName: "GiftClap",
+            keyTime: 1760
+        },
+        Cheering: {
+            animName: "Cheering",
+            attachPair: [{
+                bone: "mixamorig_MiddleFinger2_R",
+                obj: "ygb",
+                offset: {
+                    x: 0,
+                    y: 0,
+                    z: 0
+                },
+                rotate: {
+                    x: 0,
+                    y: 3.84,
+                    z: 0
+                },
+                scale: {
+                    x: 1,
+                    y: 1,
+                    z: 1
+                }
+            }, {
+                bone: "mixamorig_MiddleFinger2_L",
+                obj: "ygb",
+                offset: {
+                    x: 0,
+                    y: 0,
+                    z: 0
+                },
+                rotate: {
+                    x: 0,
+                    y: 3.49,
+                    z: 0
+                },
+                scale: {
+                    x: 1,
+                    y: 1,
+                    z: 1
+                }
+            }]
+        }
+    }
+
+    const WASM_Version = "h264"
+    , DECODER_VERSION = "v0.9.3"
+    , WASM_URLS = {
+        h264: "https://metaverse.4dage.com/wasm/lib_ff264dec_no_idb_with_wasm_tbundle.js",
+        xv265: "https://metaverse.4dage.com/wasm/libxv265dec.js",
+        h265: ""
+    }
+    , STUCK_STAGE_GOOD = 45
+    , STUCK_STAGE_WELL = 85
+    , STUCK_STAGE_FAIR = 125
+    , STUCK_STAGE_BAD = 165
+    , DECODER_PASSIVE_JITTER = 0;
+
+
+
+
+    /**
+     * 公共方法
+     **/
+    const isFunction = i=>typeof i == "function";
+    
+    const isSuit = i=>i === "suit"
+    
+    // 随机获取数组内某一元素，或字符串内某一字符
+    const getRandomItem = (i) =>i.length === 0 ? null : i[Math.floor(Math.random() * i.length)]
+
+    const getAnimationKey = (i,e)=>e + "_" + i
+
+    const blobToDataURI = async i=>new Promise((e,t)=>{
+        const r = new FileReader;
+        r.readAsDataURL(i),
+        r.onload = function(n) {
+            var o;
+            e((o = n.target) == null ? void 0 : o.result)
+        }
+        ,
+        r.onerror = function(n) {
+            t(n)
+        }
+    });
+
+    // 系统检测
+    const checkOS = ()=>{
+        const i = navigator.userAgent
+        , e = /(?:Windows Phone)/.test(i)
+        , t = /(?:SymbianOS)/.test(i) || e
+        , r = /(?:Android)/.test(i)
+        , n = /(?:Firefox)/.test(i);
+        /(?:Chrome|CriOS)/.test(i);
+        const o = /(?:iPad|PlayBook)/.test(i) || r && !/(?:Mobile)/.test(i) || n && /(?:Tablet)/.test(i)
+        , a = /(?:iPhone|ipad|ipod)/.test(i) && !o
+        , s = !a && !r && !t;
+        return {
+            isTablet: o,
+            isPhone: a,
+            isIOS: /iPhone|iPod|iPad/.test(navigator.userAgent),
+            isAndroid: r,
+            isPc: s
+        }
+    }
+
+    var De = Object.defineProperty
+    , Ne = Object.defineProperties;
+    var we = Object.getOwnPropertyDescriptors;
+    var be = Object.getOwnPropertySymbols;
+    var Me = Object.prototype.hasOwnProperty
+    , Ie = Object.prototype.propertyIsEnumerable;
+
+    var Se = (obj, key, value) => 
+        key in obj ? Object.defineProperty(obj, key, {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value: value
+        }) : obj[key] = value
+
+    , oe = (obj, propsObj)=>{
+        for (var t in propsObj || (propsObj = {}))
+            Me.call(propsObj, t) && Se(obj, t, propsObj[t]);
+        if (Object.getOwnPropertySymbols) {
+            for (var t of Object.getOwnPropertySymbols(propsObj))
+                Ie.call(propsObj, t) && Se(obj, t, propsObj[t]);
+        }
+        return obj
+    }
+    // 将propsObj的所有属性拷贝到obj
+    , le = (obj, propsObj) => Object.defineProperties(obj, Object.getOwnPropertyDescriptors(propsObj));
+    
+    var Oe = (i,e)=>{
+        var t = {};
+        for (var r in i)
+            Me.call(i, r) && e.indexOf(r) < 0 && (t[r] = i[r]);
+        if (i != null && be)
+            for (var r of be(i))
+                e.indexOf(r) < 0 && Ie.call(i, r) && (t[r] = i[r]);
+        return t
+    };
+
+    var E = (i,e,t)=>(Se(i, typeof e != "symbol" ? e + "" : e, t),t);
+
+    // 自定义Promise超时
+    Promise.prototype._timeout = function(timeLimit, e) {
+        let handle;
+        return new Promise((resolve, reject) => (
+            handle = window.setTimeout(()=>{
+                reject(e)
+            }, timeLimit),
+            this.then(
+                o=>{
+                    clearTimeout(handle),
+                    resolve(o)
+                }, 
+                o=>{
+                    clearTimeout(handle),
+                    reject(o)
+                }
+            )
+        ))
+    };
+
+    function toast(i, e) {
+        const {onClick: t, duration: r} = e || {};
+        // return window.Toastify({
+        return (new Toastify({
+            text: i,
+            duration: r || 3e3,
+            position: "center",
+            onClick: function() {
+                t && t()
+            }
+        })).showToast()
+        // }).showToast()
+    }
+
+    class Toastify {
+        constructor(options) {
+            this.text = options.text
+            this.duration = options.duration
+            this.onClick = options.onClick
+        }
+        showToast() {
+            setTimeout(() => {
+                let res = confirm(this.text)
+                if(res) {
+                    this.onClick()
+                }
+            }, this.duration)
+            return this
+        }
+        hideToast() {
+            return this
+        }
+    }
+
+    // 将原json里的值全部转成float，并返回一个新json
+    const objectParseFloat = (i) => {
+        const e = {};
+        i && Object.keys(i).forEach((t) => {
+            e[t] = parseFloat(i[t]);
+        })
+        return e;
+    }
+
+    const safelyJsonParse = i=> {
+        let e = {};
+        try {
+            e = JSON.parse(i)
+        } catch {}
+        return e
+    }
+
+    const safeParseComponents = i=>{
+        let e = [];
+        try {
+            e = JSON.parse(i || "[]")
+        } catch {
+            e = [],
+            log$2.error(`avatarComponents parse error: ${i}`)
+        }
+        return e
+    }
+
+    const safeDecodeURIComponent = i=>{
+        let e = "";
+        try {
+            e = decodeURIComponent(i)
+        } catch {
+            e = i
+        }
+        return e
+    }
+
+    // 坐标和旋转数值保护，保留2位小数
+    const positionPrecisionProtect = i=>{
+        const {x: e, y: t, z: r} = i;
+        return {
+            x: +e.toFixed(2),
+            y: +t.toFixed(2),
+            z: +r.toFixed(2)
+        }
+    }
+    const rotationPrecisionProtect = i=>{
+        const {pitch: e, yaw: t, roll: r} = i;
+        return {
+            pitch: +e.toFixed(2),
+            yaw: +t.toFixed(2),
+            roll: +r.toFixed(2)
+        }
+    }
+
+    const avatarComponentsModify = (i,e)=>new Promise((t,r)=>{
+        var l;
+        let n = [];
+        const o = []
+        , a = [];
+        let s = e.some(u=>isSuit(u.type));
+        if ((l = i == null ? void 0 : i.components) == null || l.forEach(u=>{
+            var f;
+            const c = e.find(d=>d.type === u.type)
+            , h = c && ((f = i == null ? void 0 : i.components) == null ? void 0 : f.find(d=>d.type === c.type && d.units.some(_=>_.id === c.id))) !== void 0;
+            if (c)
+                if (h)
+                    n.push(c);
+                else {
+                    const d = u.units.find(_=>_.isDefault) || u.units[0];
+                    d ? n.push({
+                        type: u.type,
+                        id: d.id
+                    }) : o.push(`component with type: ${u.type} without default and available unit`)
+                }
+            else if (isSuit(u.type)) {
+                const d = u.units.find(_=>_.isDefault);
+                d && n.push({
+                    type: u.type,
+                    id: d.id
+                })
+            } else {
+                const d = u.units.find(_=>_.isDefault) || u.units[0];
+                d ? n.push({
+                    type: u.type,
+                    id: d.id
+                }) : o.push(`component with type: ${u.type} without default and available unit`)
+            }
+        }
+        ),
+        s = n.some(u=>isSuit(u.type)),
+        s) {
+            const u = i == null ? void 0 : i.components.find(c=>isSuit(c.type));
+            n = n.filter(c=>(u == null ? void 0 : u.suitComb.indexOf(c.type)) === -1)
+        }
+        o.length > 0 && (log$2.error(o.join(", ")),
+        r(o.join(", "))),
+        a.length > 0 && log$2.warn(a.join(", ")),
+        t(n)
+    })
+
+    const avatarComponentsParser = async(i=null,e,t=[])=>new Promise(async(r,n)=>{
+        var u, c;
+        if (e.find(h=>isSuit(h.type))) {
+            const h = (c = (u = i == null ? void 0 : i.components) == null ? void 0 : u.find(f=>isSuit(f.type))) == null ? void 0 : c.suitComb;
+            e = e.filter(f=>(h == null ? void 0 : h.indexOf(f.type)) === -1)
+        }
+        const a = e.filter(h=>!t.some(f=>f.id === h.id));
+        a.length === 0 && r([]);
+        const s = [];
+        a.forEach(async h=>{
+            var _;
+            let f = (_ = i == null ? void 0 : i.components) == null ? void 0 : _.find(g=>g.type === h.type);
+            if (!f) {
+                const g = `changeComponents, no such component with type: ${h.type}`;
+                log$2.error(g),
+                n(g)
+            }
+            f = JSON.parse(JSON.stringify(f));
+            let d = f == null ? void 0 : f.units.find(g=>g.id === h.id);
+            d || (log$2.warn(`changeComponents, no unit with type: ${h.type}, id: ${h.id}`),
+            d = f == null ? void 0 : f.units.find(g=>g.isDefault),
+            !d && log$2.warn(`changeComponents, no default unit with type: ${h.type}`)),
+            d && s.push({
+                id: d.id,
+                url: d.url,
+                suitComb: (f == null ? void 0 : f.suitComb) || [],
+                type: h.type
+            })
+        });
+        const l = [];
+        Promise.all(l).then(h=>{
+            s.forEach((f,d)=>{
+                var _, g;
+                if (!isSuit(f.type)) {
+                    const m = ((g = (_ = i == null ? void 0 : i.components) == null ? void 0 : _.find(v=>isSuit(v.type))) == null ? void 0 : g.suitComb) || [];
+                    m.length > 0 && (m == null ? void 0 : m.indexOf(f.type)) !== -1 && (f.suitComb = ["suit"])
+                }
+                f.url = h[d]
+            }
+            ),
+            r(s)
+        }).catch(h=>{
+            n(h)
+        })
+    })
+
+
+
+
+    /**
+     * 坐标转换相关
+     **/
+
+    // UE4 to Xverse
+    const ue4Rotation2Xverse = i=>isRotationCorrect() ? (
+      i.pitch >= 89.5 ? i.pitch = 89.5 : i.pitch <= -89.5 && (i.pitch = -89.5),
+      new BABYLON.Vector3(-1 * Math.PI * i.pitch / 180,Math.PI * i.yaw / 180 - Math.PI * 27 / 18,Math.PI * i.roll / 180 < .001 ? 0 : Math.PI * i.roll / 180)
+    ) : null
+    const ue4Rotation2Xverse_mesh = i=>isRotationCorrect() ? new BABYLON.Vector3(Math.PI * i.pitch / 180,Math.PI * i.yaw / 180,Math.abs(Math.PI * i.roll) / 180 < .001 ? 0 : -1 * (Math.PI * i.roll) / 180) : null
+    const scaleFromUE4toXverse = 100;
+    const ue4Scaling2Xverse = i=>isScalingCorrect() ? new BABYLON.Vector3(i.x,i.z,-1 * i.y) : null
+    const ue4Position2Xverse = i=>isPositionCorrect() ? new BABYLON.Vector3(i.x * .01,i.z * .01,-1 * i.y * .01) : null
+
+    // Xverse to Ue4
+    const xversePosition2Ue4 = i=>isPositionCorrect() ? {
+        x: i.x * 100,
+        y: -1 * i.z * 100,
+        z: i.y * 100
+    } : null
+    const xverseRotation2Ue4 = i=>{
+        if (isPositionCorrect()) {
+            let e = 0;
+            return i.z == 0 ? e = 0 : e = 180 * i.z / Math.PI,
+            {
+                pitch: 180 * i.x * -1 / Math.PI,
+                yaw: (i.y + Math.PI * 27 / 18) * 180 / Math.PI,
+                roll: e
+            }
+        } else
+            return null
+    }
+
+    // 计算两个向量间的距离或角度
+    const calcDistance3D = (i,e)=>Math.sqrt((i.x - e.x) * (i.x - e.x) + (i.y - e.y) * (i.y - e.y) + (i.z - e.z) * (i.z - e.z))
+    const calcDistance3DVector = (i,e)=>Math.sqrt((i.x - e.x) * (i.x - e.x) + (i.y - e.y) * (i.y - e.y) + (i.z - e.z) * (i.z - e.z))
+    const calcDistance3DAngle = (i,e)=>Math.sqrt((i.roll - e.roll) * (i.roll - e.roll) + (i.pitch - e.pitch) * (i.pitch - e.pitch) + (i.yaw - e.yaw) * (i.yaw - e.yaw))
+
+    const isPositionCorrect = i=>!0
+    const isScalingCorrect = i=>!0
+    const isRotationCorrect = i=>!0
+    
+    const getStringBoundaries = (i,e,t=new Map)=>{
+        let r = 0
+        , n = ""
+        , o = -1
+        , a = 0;
+        const s = [0];
+        for (let l = 0; l < i.length; l++) {
+            const u = i.codePointAt(l);
+            let c = t.get(u);
+            if (c)
+                r += c,
+                n += i[l],
+                u > 64 && u < 91 || u > 96 && u < 123 ? (o == -1 && (o = l),
+                a += c) : (o = -1,
+                a = 0);
+            else if (u < 975 || u > 1024 && u < 1920)
+                c = 1,
+                r++,
+                n += i[l],
+                u > 64 && u < 91 || u > 96 && u < 123 ? (o == -1 && (o = l),
+                a += c) : (o = -1,
+                a = 0);
+            else if (u > 4499 && u < 4600 || u > 8207 && u < 8232 || u > 8238 && u < 8287 || u > 8238 && u < 8287 || u > 8304 && u < 8384 || u > 8447 && u < 9211 || u > 11263 && u < 11624 || u > 11646 && u < 11671 || u > 11679 && u < 11845 || u > 11903 && u < 12020 || u > 12031 && u < 12246 || u > 12287 && u < 12544 || u > 12548 && u < 12728 || u > 12735 && u < 12772 || u > 12783 && u < 19894 || u > 19967 && u < 40918 || u > 42191 && u < 42240 || u > 44031 && u < 55204 || u > 59276 && u < 59287 || u > 59412 && u < 59493 || u > 63743 && u < 64207 || u > 65039 && u < 65050 || u > 65071 && u < 65510)
+                c = 2,
+                r += 2,
+                o = -1,
+                a = 0,
+                n += i[l];
+            else if (u > 9311 && u < 11158) {
+                c = 2,
+                r += 2,
+                o = -1,
+                a = 0,
+                n += i[l];
+                const h = i.codePointAt(l + 1);
+                h > 65023 && h < 65040 && (n += i[l + 1],
+                l++)
+            } else
+                u > 126979 && u < 129783 && (c = 2,
+                r += 2,
+                o = -1,
+                a = 0,
+                l++,
+                n += String.fromCodePoint(u));
+            if (l == s[s.length - 1] + 1 && o > 0 ? (s[s.length - 1] = o,
+            r = 0 + a) : r > e && (s.push(l),
+            a >= r && (a = 0 + c,
+            o = 0),
+            r = 0 + c),
+            l >= i.length - 1)
+                break
+        }
+        return s[s.length - 1] != i.length && s.push(i.length),
+        [n, s]
+    }
+    
+
+   
+
+    var Observer = function() {
+        function i(e, t, r) {
+            r === void 0 && (r = null),
+            this.callback = e,
+            this.mask = t,
+            this.scope = r,
+            this._willBeUnregistered = !1,
+            this.unregisterOnNextCall = !1
+        }
+        return i
+    }()
+
+    var Observable = function() {
+        function i(e) {
+            this._observers = new Array,
+            this._eventState = new BABYLON.EventState(0),
+            e && (this._onObserverAdded = e)
+        }
+        i.FromPromise = function(e, t) {
+            var r = new i;
+            return e.then(function(n) {
+                r.notifyObservers(n)
+            }).catch(function(n) {
+                if (t)
+                    t.notifyObservers(n);
+                else
+                    throw n
+            }),
+            r
+        }
+        ,
+        Object.defineProperty(i.prototype, "observers", {
+            get: function() {
+                return this._observers
+            },
+            enumerable: !1,
+            configurable: !0
+        }),
+        i.prototype.add = function(e, t, r, n, o) {
+            if (t === void 0 && (t = -1),
+            r === void 0 && (r = !1),
+            n === void 0 && (n = null),
+            o === void 0 && (o = !1),
+            !e)
+                return null;
+            var a = new Observer(e,t,n);
+            return a.unregisterOnNextCall = o,
+            r ? this._observers.unshift(a) : this._observers.push(a),
+            this._onObserverAdded && this._onObserverAdded(a),
+            a
+        }
+        ,
+        i.prototype.addOnce = function(e) {
+            return this.add(e, void 0, void 0, void 0, !0)
+        }
+        ,
+        i.prototype.remove = function(e) {
+            if (!e)
+                return !1;
+            var t = this._observers.indexOf(e);
+            return t !== -1 ? (this._deferUnregister(e),
+            !0) : !1
+        }
+        ,
+        i.prototype.removeCallback = function(e, t) {
+            for (var r = 0; r < this._observers.length; r++) {
+                var n = this._observers[r];
+                if (!n._willBeUnregistered && n.callback === e && (!t || t === n.scope))
+                    return this._deferUnregister(n),
+                    !0
+            }
+            return !1
+        }
+        ,
+        i.prototype._deferUnregister = function(e) {
+            var t = this;
+            e.unregisterOnNextCall = !1,
+            e._willBeUnregistered = !0,
+            setTimeout(function() {
+                t._remove(e)
+            }, 0)
+        }
+        ,
+        i.prototype._remove = function(e) {
+            if (!e)
+                return !1;
+            var t = this._observers.indexOf(e);
+            return t !== -1 ? (this._observers.splice(t, 1),
+            !0) : !1
+        }
+        ,
+        i.prototype.makeObserverTopPriority = function(e) {
+            this._remove(e),
+            this._observers.unshift(e)
+        }
+        ,
+        i.prototype.makeObserverBottomPriority = function(e) {
+            this._remove(e),
+            this._observers.push(e)
+        }
+        ,
+        i.prototype.notifyObservers = function(e, t, r, n, o) {
+            if (t === void 0 && (t = -1),
+            !this._observers.length)
+                return !0;
+            var a = this._eventState;
+            a.mask = t,
+            a.target = r,
+            a.currentTarget = n,
+            a.skipNextObservers = !1,
+            a.lastReturnValue = e,
+            a.userInfo = o;
+            for (var s = 0, l = this._observers; s < l.length; s++) {
+                var u = l[s];
+                if (!u._willBeUnregistered && (u.mask & t && (u.scope ? a.lastReturnValue = u.callback.apply(u.scope, [e, a]) : a.lastReturnValue = u.callback(e, a),
+                u.unregisterOnNextCall && this._deferUnregister(u)),
+                a.skipNextObservers))
+                    return !1
+            }
+            return !0
+        }
+        ,
+        i.prototype.notifyObserversWithPromise = function(e, t, r, n, o) {
+            var a = this;
+            t === void 0 && (t = -1);
+            var s = Promise.resolve(e);
+            if (!this._observers.length)
+                return s;
+            var l = this._eventState;
+            return l.mask = t,
+            l.target = r,
+            l.currentTarget = n,
+            l.skipNextObservers = !1,
+            l.userInfo = o,
+            this._observers.forEach(function(u) {
+                l.skipNextObservers || u._willBeUnregistered || u.mask & t && (u.scope ? s = s.then(function(c) {
+                    return l.lastReturnValue = c,
+                    u.callback.apply(u.scope, [e, l])
+                }) : s = s.then(function(c) {
+                    return l.lastReturnValue = c,
+                    u.callback(e, l)
+                }),
+                u.unregisterOnNextCall && a._deferUnregister(u))
+            }),
+            s.then(function() {
+                return e
+            })
+        }
+        ,
+        i.prototype.notifyObserver = function(e, t, r) {
+            if (r === void 0 && (r = -1),
+            !e._willBeUnregistered) {
+                var n = this._eventState;
+                n.mask = r,
+                n.skipNextObservers = !1,
+                e.callback(t, n),
+                e.unregisterOnNextCall && this._deferUnregister(e)
+            }
+        }
+        ,
+        i.prototype.hasObservers = function() {
+            return this._observers.length > 0
+        }
+        ,
+        i.prototype.clear = function() {
+            this._observers = new Array,
+            this._onObserverAdded = null
+        }
+        ,
+        i.prototype.clone = function() {
+            var e = new i;
+            return e._observers = this._observers.slice(0),
+            e
+        }
+        ,
+        i.prototype.hasSpecificMask = function(e) {
+            e === void 0 && (e = -1);
+            for (var t = 0, r = this._observers; t < r.length; t++) {
+                var n = r[t];
+                if (n.mask & e || n.mask === e)
+                    return !0
+            }
+            return !1
+        }
+        return i
+    }();
+
+    </script>
+
+    <div id="root">
+        <div class="loading" style="z-index: 9999"></div>
+        <div class = "App">
+            <canvas id = "canvas" class = "stream unselect">
+
+            </canvas>
+        </div>
+        <div class="debug_control_btns">
+            <button class="debugger1">Toggle Stats</button>
+            <button class="debugger2">取消低模着色</button>
+            <button class="debugger3">画质：高</button>
+            <button class="font-size-small debugger4" onclick="room.debug.toggleNearbyBreathPoint">Toggle周边呼吸点</button>
+
+            <button class="font-size-small debugger5" onclick="room.debug.toggleTapBreathPoint">Toggle点击呼吸点</button>
+            <!-- <button class="font-size-small debugger6" >录制码流（10s）</button> -->
+            <button class="font-size-small debugger7" >开始录制</button>
+            <button class="font-size-small debugger8" style="display: none; background-color: brown;" >结束录制</button>
+        </div>
+   
+    </div>
+    <script type="module">
+        document.querySelector('.debugger1').onclick = ()=>{
+            var y, b;
+                  (y = window.room.stats) != null && y.isShow
+                    ? window.room.stats.hide()
+                    : (b = window.room.stats) == null || b.show();
+        }
+        document.querySelector('.debugger2').onclick = ()=>{
+            window.room.debug.toggleSceneshading() //, r(room.debug.isSceneShading);
+        }
+        document.querySelector('.debugger3').onclick = ()=>{
+            let y = "average";
+                  n === "high"
+                    ? (y = "average")
+                    : n === "average"
+                    ? (y = "low")
+                    : n === "low"
+                    ? (y = "high")
+                    : (y = "average"),
+                    o(y),
+                    window.room.setPictureQualityLevel(y);
+        }
+        document.querySelector('.debugger4').onclick = ()=>{
+            window.room.debug.toggleNearbyBreathPoint();
+        }
+        document.querySelector('.debugger5').onclick = ()=>{
+            window.room.debug.toggleTapBreathPoint();
+        }
+        // document.querySelector('.debugger6').onclick = ()=>{
+        //     window.room.debug.dumpStream(() => {
+        //             //   toast("\u5F55\u5236\u5B8C\u6210");
+        //             });
+        //     // toast("\u5F00\u59CB\u5F55\u5236");
+        // }
+        document.querySelector('.debugger7').onclick = ()=>{
+            window.startRecord();
+            document.querySelector('.debugger7').style.display = "none"
+            document.querySelector('.debugger8').style.display = "block"
+        }
+        document.querySelector('.debugger8').onclick = ()=>{
+            window.stopRecord();
+            document.querySelector('.debugger7').style.display = "block"
+            document.querySelector('.debugger8').style.display = "none"
+        }
+
+        // 只在调试时显示control面板
+        debugMode || (document.querySelector(".debug_control_btns").style.display = "none")
+    </script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

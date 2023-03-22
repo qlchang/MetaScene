@@ -1,0 +1,24 @@
+{
+    "components": {
+        "thumbnail": "",
+        "url": "body.glb",
+        "url_lod2": "body.glb",
+        "url_lod4": "body.glb"
+    },
+    "animations": [
+        {
+            "thumbnail": "",
+            "id": "1",
+            "name": "Idle",
+            "sex": "man",
+            "url": "animations/Idle.glb"
+        },
+        {
+            "thumbnail": "",
+            "id": "2",
+            "name": "Walking",
+            "sex": "man",
+            "url": "animations/Walking.glb"
+        }
+    ]
+}
