@@ -1,0 +1,351 @@
+//版本
+syntax = "proto3";
+package scene;
+option java_multiple_files = true;
+// grpc插件生成的类的报名，随便写
+option java_package = "com.fdkk.fdkkmeta.grpc";
+
+// grpc的方法
+service SceneGrpcService {
+  rpc getRoute (RouteRequest) returns (RouteReply){}
+  rpc init (InitRequest) returns (CommonReply){}
+  rpc rotate (RotateRequest) returns (NormalReply){}
+  rpc move (MoveRequest) returns (NormalReply){}
+//  rpc moveStart (StartMoveRequest) returns (MoveReply){}
+//  rpc moveProcess (MoveNextNeighborRequest) returns (MoveReply){}
+  rpc echo (EchoRequest) returns (EchoReply){}
+  rpc usersState (GetNewUserStateRequest) returns (GetNewUserStateReply){}
+  rpc getBreakPoint (BreakPointRequest) returns (BreakPointReply){}
+  rpc joystick (JoystickRequest) returns (NormalReply){} //操作杆
+  rpc exit(ExitRequest) returns (NormalReply){}
+}
+// 全局对象
+message Point {
+  string x=1;
+  string y=2;
+  string z=3;
+}
+
+// 全局对象
+message AngleUe4 {
+  int32 pitch=1;
+  int32 yaw=2;
+  int32 roll=3;
+}
+
+// 全局对象
+message RouteArray{
+  int32 id=1;
+  Point location=2;
+}
+
+// getRoute入参对象
+message RouteRequest {
+  Point s_location=1;
+  Point e_location=2;
+  string sceneCode=3;
+}
+
+// getRoute出参对象
+message RouteReply{
+  repeated RouteArray in=1;
+}
+
+// 入参对象
+message SceneRequest {
+  string id=1;
+  string name=2;
+}
+// 出参对象
+message SceneReply {
+  string res=1;
+}
+
+/**********************************************************/
+// 正常出参对象
+message NormalReply {
+  int32 code=1;                                       //0/1   0表示没收到，1表示收到
+}
+
+/**********************************************************/
+
+/***********************************************************/
+message Space {
+   Point position=1;
+   AngleUe4 angle=2;
+}
+message Extra{
+   bool removeWhenDisconnected=1;
+}
+
+message State {
+   string roomTypeId=1;
+   int32 person=2;
+   string avatarId=3;
+   string skinId=4;
+   string roomId=5;
+   bool isHost=6;
+   bool isFollowHost=7;
+   string skinDataVersion=8;
+   string avatarComponents=9;
+   string nickName=10;
+   int32 movingMode=11;
+   string attitude=12;
+   string areaName=13;
+   string pathName=14;
+   string pathId=15;
+   int32 avatarSize=16;
+   string extra=17;
+   bool prioritySync=18;
+   Space player=19;
+   Space camera=20;
+   Point cameraCenter=21;
+}
+
+message RenderInfo{
+   int32 renderType=1;
+   string videoFrame=2;
+   int32 cameraStateType=3;
+   int32 isMoving=4;
+   int32 needIfr=5;
+   int32 isVideo=6;
+   int32 stillFrame=7;
+   int32 isRotating=8;
+   int32 isFollowing=9;
+   repeated string clientPanoTitlesBitmap=10;
+   string clientPanoTreceId=11;
+   string prefetchVideoId=12;
+   bool noMedia=13;
+}
+
+message Event{
+   string id=1;
+   int32 type =2;
+   repeated Point points=3;
+   string rotateEvent=4;
+   string removeVisitorEvent=5;
+}
+
+message UserState{
+   string userId=1;
+   State playerState=2;
+   RenderInfo renderInfo=3;
+   Event event=4;
+   int32 relation=5;
+}
+/***********************************************************/
+
+// init入参对象
+message InitRequest {
+  string user_id=1;
+  string roomId=2;
+  string avatar_id=3;
+  string skin_id=4;
+  bool is_host=5;
+  string skin_data_version=6;
+  int32 rotation_render_type=7;
+  bool is_all_sync=8;
+  string nick_name=9;
+  string app_id=10;
+  Space camera=11;
+  Space player=12;
+  int32 person=13;
+  string firends=14;
+  bool sync_by_event=15;
+  string area_name=16;
+  string path_name=17;
+  string attitude=18;
+  string room_type_id=19;
+  bool syncToOthers=20;
+  bool hasAvatar=21;
+  bool prioritySync=22;
+  string extra=23;
+}
+/**********************************************************/
+message EchoMsg{
+  string echoMsg=1;
+}
+
+message EchoRequest{
+  int32 action_type=1;   //1009
+  EchoMsg echo_msg=2;
+  string trace_id=3;
+  string user_id=4;
+}
+
+message EchoReply{
+  int32 actionType=1;    //1009
+  int32 pointType=2;
+  string extra=3;
+  string traceId=4;
+  string packetId=5;
+  repeated Point nps=6;
+  int32 peopleNum=7;
+  string zoneId=8;
+  string echoMsg=9;
+  string reserveDetail=10;
+  repeated string userWithAvatarList=11;
+  repeated UserState newUserStates=12;
+  int32 code=13;
+  string msg=14;
+}
+
+/*********************************************/
+
+message getNewUserStateAction{
+  int32 userType=1;
+}
+
+message GetNewUserStateRequest{
+  int32 action_type=1;                                           //1024
+  getNewUserStateAction getNewUserStateAction=2;
+  string trace_id=3;
+  string user_id=4;
+}
+
+message GetNewUserStateReply{
+  int32 actionType=1;                                            //1024
+  int32 pointType=2;
+  string extra=3;
+  string traceId=4;
+  string packetId=5;
+  repeated Point nps=6;
+  int32 peopleNum=7;
+  string zoneId=8;
+  string echoMsg=9;
+  string reserveDetail=10;
+  repeated string userWithAvatarList=11;
+  repeated UserState newUserStates=12;
+  int32 code=13;
+  string msg=14;
+}
+/*********************************************/
+//全局对象，旋转的参数
+message RotationAction{
+  int32 vertical_move=1;
+  double horizontal_move=2;
+}
+
+// rotate入参对象
+message RotateRequest {
+  int32 action_type=1;                                                     //1014
+  RotationAction rotation_action=2;
+  string trace_id=3;
+  string user_id=4;
+}
+/**********************************************************/
+//正常的反馈
+message CommonReply {
+   repeated string traceIds=1;
+   string vehicle=2;
+   repeated UserState newUserStates=3;
+   repeated int32 actionResponses=4;
+   int32 getStateType=5;
+   int32 code=6;
+   string msg=7;
+}
+
+/**********************************************************/
+//
+message ClickingAction {
+   Point clicking_point=1;
+   int32 clicking_type=2;
+   string extra=3;
+   string attitude=4;
+}
+message MoveRequest {
+    int32 action_type=1;                                                //1
+    ClickingAction clicking_action=2;
+    State clicking_state=3;
+    string trace_id=4;
+    string user_id=5;
+}
+//// 开始请求漫游
+//message StartMoveRequest {
+//  int32 action_type=1;
+//  ClickingAction clicking_action=2;
+//  State clicking_state=3;
+//  string trace_id=4;
+//  string user_id=5;
+//}
+//
+//// 请求移动下一段
+//message MoveNextNeighborRequest {
+//  string user_id=1;
+//  string trace_id=2;
+//  bool next=3;      //true表示继续拿下一个，false表示结束（一般是有新的请求）
+//}
+
+// move出参对象
+// 这需要自定义
+//message MoveReply {
+//   repeated string traceIds=1;
+//   string vehicle=2;
+//   repeated UserState newUserStates=3;      //自己的话，不要有player,camera和cameraCenter。自己对应的这三个属性在8，9，10上，到webrtc服务器上组装
+//   repeated int32 actionResponses=4;
+//   int32 getStateType=5;
+//   int32 code=6;
+//   string msg=7;
+//   //每一段的人物和相机坐标，第一段可能还有初始旋转
+//   repeated Space player=8;
+//   repeated Space camera=9;
+//   repeated Point cameraCenter=10;
+//   repeated string frameSrc=11;
+//   bool isEnd=12;     //false表示可以继续移动，true表示这次移动已经结束
+//}
+/**********************************************************/
+
+/**********************************************************/
+message DirAction{
+  int32 move_angle=1;
+  int32 speed_level=2;
+}
+
+//控制杆移动
+message JoystickRequest {
+  int32 action_type=1;
+  DirAction dir_action=2;
+  string trace_id=3;
+  string user_id=4;
+  string packet_id=5;
+}
+/**********************************************************/
+
+/**********************************************************/
+message NeighborPointsAction{
+  Point point=1;
+  int32 level=2;
+  bool containSelf=3;
+  int32 searchRange=4;
+}
+
+// move入参对象
+message BreakPointRequest{
+  int32 action_type=1;                                              //1004
+  NeighborPointsAction get_neighbor_points_action=2;
+  string trace_id=3;
+  string user_id=4;
+}
+// move出参对象
+message BreakPointReply {
+  int32 actionType=1;                                               //1004
+  int32 pointType=2;
+  string extra=3;
+  string traceId=4;
+  string packetId=5;
+  repeated Point nps=6;
+  int32 peopleNum=7;
+  string zoneId=8;
+  string echoMsg=9;
+  string reserveDetail=10;
+  repeated string userWithAvatarList=11;
+  repeated UserState newUserStates=12;
+  int32 code=13;
+  string msg=14;
+}
+/**********************************************************/
+message ExitRequest{
+  int32 action_type=1;                                           //1002
+  string user_id=2;
+  string trace_id=3;
+}
