@@ -1,3 +1,0 @@
-interface VerticalLineType {
-  a: number;
-}
