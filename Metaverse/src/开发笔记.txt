@@ -1,0 +1,107 @@
+1. Logger不能用单例模式，里面的module对应的是类的名称
+2. BABYLON源码修改：
+
+        this._onBeforeRegisterBeforeRenderObserver = null,
+        this._onAfterRegisterBeforeRenderObserver = null,
+        this._RTT1Time = new Rr.a,
+        this._onBeforeRTT1Observer = null,
+        this._onAfterRTT1Observer = null,
+        this._registerAfterRenderTime = new Rr.a,
+        this._onBeforeRegisterAfterRenderObserver = null,
+        this._onAfterRegisterAfterRenderObserver = null,
+        
+
+        Object.defineProperty(e.prototype, "registerBeforeTimeCounter", {
+            get: function() {
+                return this._registerBeforeRenderTime
+            },
+            enumerable: !1,
+            configurable: !0
+        }),
+        Object.defineProperty(e.prototype, "getRTT1TimeCounter", {
+            get: function() {
+                return this._RTT1Time
+            },
+            enumerable: !1,
+            configurable: !0
+        }),
+        Object.defineProperty(e.prototype, "registerAfterTimeCounter", {
+            get: function() {
+                return this._registerAfterRenderTime
+            },
+            enumerable: !1,
+            configurable: !0
+        }),
+
+
+		r.onBeforeRunRegisterBeforeRenderObservable = new Observable,
+        r.onAfterRunRegisterBeforeRenderObservable = new Observable,
+        r.onBeforeRunRegisterAfterRenderObservable = new Observable,
+        r.onAfterRunRegisterAfterRenderObservable = new Observable,
+        r.onBeforeRTT1Observable = new Observable,
+        r.onAfterRTT1Observable = new Observable,
+		
+
+
+
+
+
+        this._onBeforeRegisterBeforeRenderObserver = e.onBeforeRunRegisterBeforeRenderObservable.add(function() {
+            t._registerBeforeRenderTime.beginMonitoring()
+        }),
+        this._onAfterRegisterBeforeRenderObserver = e.onAfterRunRegisterBeforeRenderObservable.add(function() {
+            t._registerBeforeRenderTime.endMonitoring()
+        }),
+        this._onBeforeRegisterAfterRenderObserver = e.onBeforeRunRegisterAfterRenderObservable.add(function() {
+            t._registerAfterRenderTime.beginMonitoring()
+        }),
+        this._onAfterRegisterAfterRenderObserver = e.onAfterRunRegisterAfterRenderObservable.add(function() {
+            t._registerAfterRenderTime.endMonitoring()
+        }),
+        this._onBeforeRTT1Observer = e.onBeforeRTT1Observable.add(function() {
+            t._RTT1Time.beginMonitoring()
+        }),
+        this._onAfterRTT1Observer = e.onAfterRTT1Observable.add(function() {
+            t._RTT1Time.endMonitoring()
+        })
+
+
+        this.onBeforeRunRegisterBeforeRenderObservable.notifyObservers(this),
+        this.onBeforeRenderObservable.notifyObservers(this),
+        this.onAfterRunRegisterBeforeRenderObservable.notifyObservers(this),
+
+
+
+
+
+
+
+        this.onBeforeRunRegisterBeforeRenderObservable.clear(),
+        this.onAfterRunRegisterBeforeRenderObservable.clear(),
+        this.onBeforeRTT1Observable.clear(),
+        this.onAfterRTT1Observable.clear(),
+        this.onBeforeRunRegisterAfterRenderObservable.clear(),
+        this.onAfterRunRegisterAfterRenderObservable.clear()
+
+		this.scene.onBeforeRunRegisterBeforeRenderObservable.remove(this._onBeforeRegisterBeforeRenderObserver),
+        this._onBeforeRegisterBeforeRenderObserver = null,
+        this.scene.onAfterRunRegisterBeforeRenderObservable.remove(this._onAfterRegisterBeforeRenderObserver),
+        this._onAfterRegisterBeforeRenderObserver = null,
+        this.scene.onBeforeRunRegisterAfterRenderObservable.remove(this._onBeforeRegisterAfterRenderObserver),
+        this._onBeforeRegisterAfterRenderObserver = null,
+        this.scene.onAfterRunRegisterAfterRenderObservable.remove(this._onAfterRegisterAfterRenderObserver),
+        this._onAfterRegisterAfterRenderObserver = null,
+        this.scene.onBeforeRTT1Observable.remove(this._onBeforeRTT1Observer),
+        this._onBeforeRTT1Observer = null,
+        this.scene.onAfterRTT1Observable.remove(this._onAfterRTT1Observer),
+        this._onAfterRTT1Observer = null,
+		
+		
+/***************************************************************************************************************************************************************************************/
+3. Broadcast类， constructor(xverseRoom, t) 中参数t的意思？
+4. 对方网页端可以录制视频，直接采用了腾讯云oss的sdk，直接上传。代码在这一块：COS$1 = function(i)
+5. EngineProxy里，skinId如果是10048
+
+
+
+

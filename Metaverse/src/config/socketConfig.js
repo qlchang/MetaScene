@@ -1,0 +1,26 @@
+export default {
+  SERVER_URLS: {
+    DEV: "wss://sit-eks.xverse.cn/ws",
+    PROD: "wss://eks.xverse.cn/ws",
+  },
+  REPORT_URL: {
+    DEV: "https://xa.xverse.cn:6680/collect1",
+    PROD: "https://xa.xverse.cn/collect1",
+  },
+  MAX_RECONNECT_COUNT: 3,
+  DEFAULT_JOINROOM_TIMEOUT: 15e3,
+  DEFAULT_MAIN_CAMERA_FOV: 50,
+  DEFAULT_AVATAR_SCALE: 1,
+  REPORT_NUM_PER_REQUEST: 20,
+  DEFAULT_OPEN_TIMEOUT_MS: 6e3,
+  WS_CLOSE_NORMAL: 1e3,
+  WS_CLOSE_RECONNECT: 3008,
+  PING_INTERVAL_MS: 1e3,
+  TEXTURE_URL: "https://static.xverse.cn/qqktv/texture.png",
+  REPORT_MODULE_TYPE: "xverse-js",
+  authenticationErrorCodes: [3001, 3002, 3003, 3005],
+  RTT_MAX_VALUE: 200,
+  HB_MAX_VALUE: 500,
+  DURATION: 10,
+  NET_INTERVAL: 1,
+};

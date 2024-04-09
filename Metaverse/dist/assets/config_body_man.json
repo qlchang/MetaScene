@@ -1,0 +1,2466 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "config": {
+            "avatars": [
+                {
+                    "id": "My_Actor",
+                    "name": "My_Actor",
+                    "url": "./assets/avatar/body_man.zip",
+                    "gender": "man",
+                    "components": [
+                        {
+                            "name": "clothes",
+                            "type": "clothes",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "xiaoyuan_clothes_man",
+                                    "name": "xiaoyuan_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/xiaoyuan_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_clothes_man",
+                                    "name": "test02_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/test02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_clothes_man",
+                                    "name": "rock02_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/rock02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_clothes_man",
+                                    "name": "hiphop02_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/hiphop02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_clothes_man",
+                                    "name": "casual01_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/casual01_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_clothes_man",
+                                    "name": "casual02_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/casual02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_clothes_man",
+                                    "name": "casual04_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/casual04_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual05_clothes_man",
+                                    "name": "casual05_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/casual05_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday01_clothes_man",
+                                    "name": "mayday01_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/mayday01_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday02_clothes_man",
+                                    "name": "mayday02_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/mayday02_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday03_clothes_man",
+                                    "name": "mayday03_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/mayday03_clothes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday04_clothes_man",
+                                    "name": "mayday04_clothes_man",
+                                    "url": "./assets/avatar/components/clothes/mayday04_clothes_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "suit",
+                            "type": "suit",
+                            "suitComb": [
+                                "clothes",
+                                "pants"
+                            ],
+                            "units": [
+                                {
+                                    "id": "cityPop02_suit_man",
+                                    "name": "cityPop02_suit_man",
+                                    "url": "./assets/avatar/components/suit/cityPop02_suit_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "hair",
+                            "type": "hair",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "cityPop02_hair_man",
+                                    "name": "cityPop02_hair_man",
+                                    "url": "./assets/avatar/components/hair/cityPop02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "xiaoyuan_hair_man",
+                                    "name": "xiaoyuan_hair_man",
+                                    "url": "./assets/avatar/components/hair/xiaoyuan_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_hair_man",
+                                    "name": "test02_hair_man",
+                                    "url": "./assets/avatar/components/hair/test02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_hair_man",
+                                    "name": "rock02_hair_man",
+                                    "url": "./assets/avatar/components/hair/rock02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mux02_hair_man",
+                                    "name": "mux02_hair_man",
+                                    "url": "./assets/avatar/components/hair/mux02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_hair_man",
+                                    "name": "hiphop02_hair_man",
+                                    "url": "./assets/avatar/components/hair/hiphop02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_hair_man",
+                                    "name": "casual01_hair_man",
+                                    "url": "./assets/avatar/components/hair/casual01_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_hair_man",
+                                    "name": "casual02_hair_man",
+                                    "url": "./assets/avatar/components/hair/casual02_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual03_hair_man",
+                                    "name": "casual03_hair_man",
+                                    "url": "./assets/avatar/components/hair/casual03_hair_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_hair_man",
+                                    "name": "casual04_hair_man",
+                                    "url": "./assets/avatar/components/hair/casual04_hair_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "head",
+                            "type": "head",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "head",
+                                    "name": "head",
+                                    "url": "./assets/avatar/components/head/head.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "shoes",
+                            "type": "shoes",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "xiaoyuan_shoes_man",
+                                    "name": "xiaoyuan_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/xiaoyuan_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_shoes_man",
+                                    "name": "test02_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/test02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_shoes_man",
+                                    "name": "rock02_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/rock02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_shoes_man",
+                                    "name": "hiphop02_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/hiphop02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "cityPop02_shoes_man",
+                                    "name": "cityPop02_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/cityPop02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_shoes_man",
+                                    "name": "casual01_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/casual01_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_shoes_man",
+                                    "name": "casual02_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/casual02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual03_shoes_man",
+                                    "name": "casual03_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/casual03_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_shoes_man",
+                                    "name": "casual04_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/casual04_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday01_shoes_man",
+                                    "name": "mayday01_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/mayday01_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday02_shoes_man",
+                                    "name": "mayday02_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/mayday02_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday03_shoes_man",
+                                    "name": "mayday03_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/mayday03_shoes_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday04_shoes_man",
+                                    "name": "mayday04_shoes_man",
+                                    "url": "./assets/avatar/components/shoes/mayday04_shoes_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        },
+                        {
+                            "name": "pants",
+                            "type": "pants",
+                            "suitComb": [],
+                            "units": [
+                                {
+                                    "id": "xiaoyuan_pants_man",
+                                    "name": "xiaoyuan_pants_man",
+                                    "url": "./assets/avatar/components/pants/xiaoyuan_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "test02_pants_man",
+                                    "name": "test02_pants_man",
+                                    "url": "./assets/avatar/components/pants/test02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "rock02_pants_man",
+                                    "name": "rock02_pants_man",
+                                    "url": "./assets/avatar/components/pants/rock02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "hiphop02_pants_man",
+                                    "name": "hiphop02_pants_man",
+                                    "url": "./assets/avatar/components/pants/hiphop02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual01_pants_man",
+                                    "name": "casual01_pants_man",
+                                    "url": "./assets/avatar/components/pants/casual01_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual02_pants_man",
+                                    "name": "casual02_pants_man",
+                                    "url": "./assets/avatar/components/pants/casual02_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual03_pants_man",
+                                    "name": "casual03_pants_man",
+                                    "url": "./assets/avatar/components/pants/casual03_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "casual04_pants_man",
+                                    "name": "casual04_pants_man",
+                                    "url": "./assets/avatar/components/pants/casual04_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday01_pants_man",
+                                    "name": "mayday01_pants_man",
+                                    "url": "./assets/avatar/components/pants/mayday01_pants_man.zip",
+                                    "isDefault": false
+                                },
+                                {
+                                    "id": "mayday02_pants_man",
+                                    "name": "mayday02_pants_man",
+                                    "url": "./assets/avatar/components/pants/mayday02_pants_man.zip",
+                                    "isDefault": false
+                                }
+                            ]
+                        }
+                    ],
+                    "animations": [
+                        {
+                            "name": "Dance01",
+                            "url": "./assets/avatar/animations/Dance01.glb"
+                        },
+                        {
+                            "name": "Dance05",
+                            "url": "./assets/avatar/animations/Dance05.glb"
+                        },
+                        {
+                            "name": "RumbaDancing",
+                            "url": "./assets/avatar/animations/RumbaDancing.glb"
+                        },
+                        {
+                            "name": "LockingHipHopDance",
+                            "url": "./assets/avatar/animations/LockingHipHopDance.glb"
+                        },
+                        {
+                            "name": "Jump_all",
+                            "url": "./assets/avatar/animations/Jump_all.glb"
+                        },
+                        {
+                            "name": "Qiangtui",
+                            "url": "./assets/avatar/animations/Qiangtui.glb"
+                        },
+                        {
+                            "name": "Hallo",
+                            "url": "./assets/avatar/animations/Hallo.glb"
+                        },
+                        {
+                            "name": "Yaotou",
+                            "url": "./assets/avatar/animations/Yaotou.glb"
+                        },
+                        {
+                            "name": "BlowAKiss",
+                            "url": "./assets/avatar/animations/BlowAKiss.glb"
+                        },
+                        {
+                            "name": "Cheering",
+                            "url": "./assets/avatar/animations/Cheering.glb"
+                        },
+                        {
+                            "name": "HappyIdle",
+                            "url": "./assets/avatar/animations/HappyIdle.glb"
+                        },
+                        {
+                            "name": "Singing",
+                            "url": "./assets/avatar/animations/Singing.glb"
+                        },
+                        {
+                            "name": "Talking",
+                            "url": "./assets/avatar/animations/Talking.glb"
+                        },
+                        {
+                            "name": "Thankful",
+                            "url": "./assets/avatar/animations/Thankful.glb"
+                        },
+                        {
+                            "name": "Waving",
+                            "url": "./assets/avatar/animations/Waving.glb"
+                        },
+                        {
+                            "name": "StartWalking",
+                            "url": "./assets/avatar/animations/StartWalking.glb"
+                        },
+                        {
+                            "name": "Running",
+                            "url": "./assets/avatar/animations/Running.glb"
+                        },
+                        {
+                            "name": "Walking",
+                            "url": "./assets/avatar/animations/Walking.glb"
+                        },
+                        {
+                            "name": "StopWalking",
+                            "url": "./assets/avatar/animations/StopWalking.glb"
+                        },
+                        {
+                            "name": "TurnBack",
+                            "url": "./assets/avatar/animations/TurnBack.glb"
+                        },
+                        {
+                            "name": "LeftTurn",
+                            "url": "./assets/avatar/animations/LeftTurn.glb"
+                        },
+                        {
+                            "name": "Idle",
+                            "url": "./assets/avatar/animations/Idle.glb"
+                        },
+                        {
+                            "name": "GiftClap",
+                            "url": "./assets/avatar/animations/GiftClap.glb"
+                        },
+                        {
+                            "name": "PHOTO_1",
+                            "url": "./assets/avatar/animations/PHOTO_1.glb"
+                        },
+                        {
+                            "name": "PHOTO_2",
+                            "url": "./assets/avatar/animations/PHOTO_2.glb"
+                        },
+                        {
+                            "name": "PHOTO_2",
+                            "url": "./assets/avatar/animations/PHOTO_2.glb"
+                        },
+                        {
+                            "name": "PHOTO_3",
+                            "url": "./assets/avatar/animations/PHOTO_3.glb"
+                        },
+                        {
+                            "name": "PHOTO_5",
+                            "url": "./assets/avatar/animations/PHOTO_5.glb"
+                        },
+                        {
+                            "name": "PHOTO_7",
+                            "url": "./assets/avatar/animations/PHOTO_7.glb"
+                        },
+                        {
+                            "name": "PHOTO_8",
+                            "url": "./assets/avatar/animations/PHOTO_8.glb"
+                        },
+                        {
+                            "name": "PHOTO_9",
+                            "url": "./assets/avatar/animations/PHOTO_9.glb"
+                        },
+                        {
+                            "name": "PHOTO_10",
+                            "url": "./assets/avatar/animations/PHOTO_10.glb"
+                        },
+                        {
+                            "name": "PHOTO_11",
+                            "url": "./assets/avatar/animations/PHOTO_11.glb"
+                        },
+                        {
+                            "name": "PHOTO_12",
+                            "url": "./assets/avatar/animations/PHOTO_12.glb"
+                        }
+                    ]
+                }
+            ],
+            "skins": [
+                {
+                    "id": "0000000001",
+                    "name": "梁启超_Cookonlymaps",
+                    "versionId": "00008",
+                    "isEnable": false,
+                    "fov": "90",
+                    "resolution": {
+                        "width": 1728,
+                        "height": 720
+                    },
+                    "assetList": [
+                        {
+                            "typeName": "MODEL",
+                            "className": "粗模",
+                            "assetId": "",
+                            "name": "ground_LQC_xverse.glb",
+                            "url": "./assets/level_L01.glb",
+                            "thumbnailUrl": ""
+                        },
+                        {
+                            "typeName": "CONFIG",
+                            "className": "环境光",
+                            "assetId": "",
+                            "name": "environment_musicfesti.env",
+                            "url": "./assets/environment_musicfesti.env",
+                            "thumbnailUrl": ""
+                        }
+                    ],
+                    "pointList": [],
+                    "routeList": [
+                        {
+                            "id": "thirdwalk",
+                            "birthPointList": [
+                                {
+                                    "player": {
+                                        "position": {
+                                            "x": "-727.49",
+                                            "y": "-1441.18",
+                                            "z": "-32.25"
+                                        },
+                                        "rotation": {
+                                            "pitch": "0.00",
+                                            "yaw": "0.00",
+                                            "roll": "0.00"
+                                        }
+                                    },
+                                    "camera": {
+                                        "position": {
+                                            "x": "-1047.49",
+                                            "y": "-1441.18",
+                                            "z": "87.75"
+                                        },
+                                        "rotation": {
+                                            "pitch": "0.00",
+                                            "yaw": "0.00",
+                                            "roll": "0.00"
+                                        }
+                                    }
+                                }
+                            ],
+                            "areaName": "LQC",
+                            "pathName": "thirdwalk",
+                            "attitude": "walk",
+                            "step": 5
+                        }
+                    ],
+                    "visibleRules": [],
+                    "animationList": [
+                        {
+                            "avatarId": "My_Actor",
+                            "animations": [
+                                "Dance01",
+                                "Dance05",
+                                "RumbaDancing",
+                                "LockingHipHopDance",
+                                "Jump_all",
+                                "Qiangtui",
+                                "Hallo",
+                                "Yaotou",
+                                "BlowAKiss",
+                                "Cheering",
+                                "HappyIdle",
+                                "Singing",
+                                "Talking",
+                                "Thankful",
+                                "Waving",
+                                "StartWalking",
+                                "Running",
+                                "Walking",
+                                "StopWalking",
+                                "TurnBack",
+                                "LeftTurn",
+                                "Idle",
+                                "GiftClap",
+                                "PHOTO_1",
+                                "PHOTO_2",
+                                "PHOTO_2",
+                                "PHOTO_3",
+                                "PHOTO_5",
+                                "PHOTO_7",
+                                "PHOTO_8",
+                                "PHOTO_9",
+                                "PHOTO_10",
+                                "PHOTO_11",
+                                "PHOTO_12"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "preload": {
+            "version": "20220318183823",
+            "assetTotalSize": 24248947,
+            "assetUrls": [
+                {
+                    "url": "./assets/avatar/body_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 14294
+                },
+                {
+                    "url": "./assets/avatar/body_man/meshes/body_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 137548
+                },
+                {
+                    "url": "./assets/avatar/body_man/meshes/body_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38020
+                },
+                {
+                    "url": "./assets/avatar/body_man/meshes/body_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38020
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/xiaoyuan_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/xiaoyuan_clothes_man/meshes/xiaoyuan_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 109876
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/xiaoyuan_clothes_man/meshes/xiaoyuan_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 77416
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/xiaoyuan_clothes_man/meshes/xiaoyuan_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 48004
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/test02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/test02_clothes_man/meshes/test02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 80208
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/test02_clothes_man/meshes/test02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 61108
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/test02_clothes_man/meshes/test02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 36972
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/rock02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/rock02_clothes_man/meshes/rock02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 112000
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/rock02_clothes_man/meshes/rock02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 74860
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/rock02_clothes_man/meshes/rock02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45024
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/hiphop02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/hiphop02_clothes_man/meshes/hiphop02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 97236
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/hiphop02_clothes_man/meshes/hiphop02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 51408
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/hiphop02_clothes_man/meshes/hiphop02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 43408
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual01_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual01_clothes_man/meshes/casual01_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 86408
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual01_clothes_man/meshes/casual01_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 61332
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual01_clothes_man/meshes/casual01_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 43028
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual02_clothes_man/meshes/casual02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 70304
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual02_clothes_man/meshes/casual02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 56352
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual02_clothes_man/meshes/casual02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 42820
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual04_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual04_clothes_man/meshes/casual04_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 93508
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual04_clothes_man/meshes/casual04_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 86244
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual04_clothes_man/meshes/casual04_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 74736
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual05_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual05_clothes_man/meshes/casual05_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 156296
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual05_clothes_man/meshes/casual05_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 67920
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/casual05_clothes_man/meshes/casual05_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54264
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday01_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday01_clothes_man/meshes/mayday01_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 123068
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday01_clothes_man/meshes/mayday01_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82924
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday01_clothes_man/meshes/mayday01_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82924
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday02_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday02_clothes_man/meshes/mayday02_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 99748
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday02_clothes_man/meshes/mayday02_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 73180
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday02_clothes_man/meshes/mayday02_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64360
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday03_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday03_clothes_man/meshes/mayday03_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 123180
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday03_clothes_man/meshes/mayday03_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64288
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday03_clothes_man/meshes/mayday03_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 48500
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday04_clothes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 274
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday04_clothes_man/meshes/mayday04_clothes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 102236
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday04_clothes_man/meshes/mayday04_clothes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82352
+                },
+                {
+                    "url": "./assets/avatar/components/clothes/mayday04_clothes_man/meshes/mayday04_clothes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 63108
+                },
+                {
+                    "url": "./assets/avatar/components/suit/cityPop02_suit_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/suit/cityPop02_suit_man/meshes/cityPop02_suit_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 244092
+                },
+                {
+                    "url": "./assets/avatar/components/suit/cityPop02_suit_man/meshes/cityPop02_suit_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 77880
+                },
+                {
+                    "url": "./assets/avatar/components/suit/cityPop02_suit_man/meshes/cityPop02_suit_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 59856
+                },
+                {
+                    "url": "./assets/avatar/components/hair/cityPop02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/hair/cityPop02_hair_man/meshes/cityPop02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 160488
+                },
+                {
+                    "url": "./assets/avatar/components/hair/cityPop02_hair_man/meshes/cityPop02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 90304
+                },
+                {
+                    "url": "./assets/avatar/components/hair/cityPop02_hair_man/meshes/cityPop02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 55248
+                },
+                {
+                    "url": "./assets/avatar/components/hair/xiaoyuan_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "./assets/avatar/components/hair/xiaoyuan_hair_man/meshes/xiaoyuan_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 159344
+                },
+                {
+                    "url": "./assets/avatar/components/hair/xiaoyuan_hair_man/meshes/xiaoyuan_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 107008
+                },
+                {
+                    "url": "./assets/avatar/components/hair/xiaoyuan_hair_man/meshes/xiaoyuan_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 84348
+                },
+                {
+                    "url": "./assets/avatar/components/hair/test02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 259
+                },
+                {
+                    "url": "./assets/avatar/components/hair/test02_hair_man/meshes/test02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 228596
+                },
+                {
+                    "url": "./assets/avatar/components/hair/test02_hair_man/meshes/test02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 325688
+                },
+                {
+                    "url": "./assets/avatar/components/hair/test02_hair_man/meshes/test02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 312356
+                },
+                {
+                    "url": "./assets/avatar/components/hair/rock02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 259
+                },
+                {
+                    "url": "./assets/avatar/components/hair/rock02_hair_man/meshes/rock02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 278468
+                },
+                {
+                    "url": "./assets/avatar/components/hair/rock02_hair_man/meshes/rock02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 142496
+                },
+                {
+                    "url": "./assets/avatar/components/hair/rock02_hair_man/meshes/rock02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 121680
+                },
+                {
+                    "url": "./assets/avatar/components/hair/mux02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 256
+                },
+                {
+                    "url": "./assets/avatar/components/hair/mux02_hair_man/meshes/mux02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 234068
+                },
+                {
+                    "url": "./assets/avatar/components/hair/mux02_hair_man/meshes/mux02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 105772
+                },
+                {
+                    "url": "./assets/avatar/components/hair/mux02_hair_man/meshes/mux02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 94120
+                },
+                {
+                    "url": "./assets/avatar/components/hair/hiphop02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "./assets/avatar/components/hair/hiphop02_hair_man/meshes/hiphop02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 66896
+                },
+                {
+                    "url": "./assets/avatar/components/hair/hiphop02_hair_man/meshes/hiphop02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 37844
+                },
+                {
+                    "url": "./assets/avatar/components/hair/hiphop02_hair_man/meshes/hiphop02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 37844
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual01_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual01_hair_man/meshes/casual01_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 231376
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual01_hair_man/meshes/casual01_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 165256
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual01_hair_man/meshes/casual01_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 139056
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual02_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual02_hair_man/meshes/casual02_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 201592
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual02_hair_man/meshes/casual02_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 76284
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual02_hair_man/meshes/casual02_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 15356
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual03_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual03_hair_man/meshes/casual03_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 122260
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual03_hair_man/meshes/casual03_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 103372
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual03_hair_man/meshes/casual03_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 57252
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual04_hair_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 265
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual04_hair_man/meshes/casual04_hair_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 98252
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual04_hair_man/meshes/casual04_hair_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 70120
+                },
+                {
+                    "url": "./assets/avatar/components/hair/casual04_hair_man/meshes/casual04_hair_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 44500
+                },
+                {
+                    "url": "./assets/avatar/components/head/head/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 226
+                },
+                {
+                    "url": "./assets/avatar/components/head/head/meshes/head.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 57232
+                },
+                {
+                    "url": "./assets/avatar/components/head/head/meshes/head_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38436
+                },
+                {
+                    "url": "./assets/avatar/components/head/head/meshes/head_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38436
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/xiaoyuan_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/xiaoyuan_shoes_man/meshes/xiaoyuan_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 139116
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/xiaoyuan_shoes_man/meshes/xiaoyuan_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 52336
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/xiaoyuan_shoes_man/meshes/xiaoyuan_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 51720
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/test02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/test02_shoes_man/meshes/test02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 151964
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/test02_shoes_man/meshes/test02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 60216
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/test02_shoes_man/meshes/test02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 41804
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/rock02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/rock02_shoes_man/meshes/rock02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 132804
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/rock02_shoes_man/meshes/rock02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 55220
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/rock02_shoes_man/meshes/rock02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 48192
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/hiphop02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/hiphop02_shoes_man/meshes/hiphop02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 112868
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/hiphop02_shoes_man/meshes/hiphop02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 62712
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/hiphop02_shoes_man/meshes/hiphop02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 46696
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/cityPop02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 271
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/cityPop02_shoes_man/meshes/cityPop02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 112832
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/cityPop02_shoes_man/meshes/cityPop02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 62028
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/cityPop02_shoes_man/meshes/cityPop02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45756
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual01_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual01_shoes_man/meshes/casual01_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 73184
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual01_shoes_man/meshes/casual01_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 58212
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual01_shoes_man/meshes/casual01_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 47728
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual02_shoes_man/meshes/casual02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 134736
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual02_shoes_man/meshes/casual02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 63344
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual02_shoes_man/meshes/casual02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 44436
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual03_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual03_shoes_man/meshes/casual03_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 78540
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual03_shoes_man/meshes/casual03_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64032
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual03_shoes_man/meshes/casual03_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 50972
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual04_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual04_shoes_man/meshes/casual04_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 64556
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual04_shoes_man/meshes/casual04_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 46704
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/casual04_shoes_man/meshes/casual04_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 36992
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday01_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday01_shoes_man/meshes/mayday01_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 162436
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday01_shoes_man/meshes/mayday01_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 79792
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday01_shoes_man/meshes/mayday01_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 58364
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday02_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday02_shoes_man/meshes/mayday02_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 143288
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday02_shoes_man/meshes/mayday02_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 76864
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday02_shoes_man/meshes/mayday02_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45632
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday03_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday03_shoes_man/meshes/mayday03_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 163316
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday03_shoes_man/meshes/mayday03_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 89424
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday03_shoes_man/meshes/mayday03_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 59568
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday04_shoes_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday04_shoes_man/meshes/mayday04_shoes_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 143604
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday04_shoes_man/meshes/mayday04_shoes_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 68416
+                },
+                {
+                    "url": "./assets/avatar/components/shoes/mayday04_shoes_man/meshes/mayday04_shoes_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45244
+                },
+                {
+                    "url": "./assets/avatar/components/pants/xiaoyuan_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/xiaoyuan_pants_man/meshes/xiaoyuan_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38300
+                },
+                {
+                    "url": "./assets/avatar/components/pants/xiaoyuan_pants_man/meshes/xiaoyuan_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 28592
+                },
+                {
+                    "url": "./assets/avatar/components/pants/xiaoyuan_pants_man/meshes/xiaoyuan_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 28592
+                },
+                {
+                    "url": "./assets/avatar/components/pants/test02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "./assets/avatar/components/pants/test02_pants_man/meshes/test02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 50632
+                },
+                {
+                    "url": "./assets/avatar/components/pants/test02_pants_man/meshes/test02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 43396
+                },
+                {
+                    "url": "./assets/avatar/components/pants/test02_pants_man/meshes/test02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 30748
+                },
+                {
+                    "url": "./assets/avatar/components/pants/rock02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 262
+                },
+                {
+                    "url": "./assets/avatar/components/pants/rock02_pants_man/meshes/rock02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 51032
+                },
+                {
+                    "url": "./assets/avatar/components/pants/rock02_pants_man/meshes/rock02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 34824
+                },
+                {
+                    "url": "./assets/avatar/components/pants/rock02_pants_man/meshes/rock02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 34824
+                },
+                {
+                    "url": "./assets/avatar/components/pants/hiphop02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/hiphop02_pants_man/meshes/hiphop02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 82720
+                },
+                {
+                    "url": "./assets/avatar/components/pants/hiphop02_pants_man/meshes/hiphop02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 59368
+                },
+                {
+                    "url": "./assets/avatar/components/pants/hiphop02_pants_man/meshes/hiphop02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 35764
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual01_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual01_pants_man/meshes/casual01_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 77564
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual01_pants_man/meshes/casual01_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 65304
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual01_pants_man/meshes/casual01_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 45476
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual02_pants_man/meshes/casual02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 60628
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual02_pants_man/meshes/casual02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 53304
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual02_pants_man/meshes/casual02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 41240
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual03_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual03_pants_man/meshes/casual03_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 65720
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual03_pants_man/meshes/casual03_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 53164
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual03_pants_man/meshes/casual03_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 39580
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual04_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual04_pants_man/meshes/casual04_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 79472
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual04_pants_man/meshes/casual04_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 68268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/casual04_pants_man/meshes/casual04_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 38424
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday01_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday01_pants_man/meshes/mayday01_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 40240
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday01_pants_man/meshes/mayday01_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 34648
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday01_pants_man/meshes/mayday01_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 29800
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday02_pants_man/component_list.json",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 268
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday02_pants_man/meshes/mayday02_pants_man.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 65740
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday02_pants_man/meshes/mayday02_pants_man_lod2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 53240
+                },
+                {
+                    "url": "./assets/avatar/components/pants/mayday02_pants_man/meshes/mayday02_pants_man_lod4.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 39540
+                },
+                {
+                    "url": "./assets/avatar/animations/Dance01.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 583044
+                },
+                {
+                    "url": "./assets/avatar/animations/Dance05.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 443164
+                },
+                {
+                    "url": "./assets/avatar/animations/RumbaDancing.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 202132
+                },
+                {
+                    "url": "./assets/avatar/animations/LockingHipHopDance.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 519188
+                },
+                {
+                    "url": "./assets/avatar/animations/Jump_all.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 231724
+                },
+                {
+                    "url": "./assets/avatar/animations/Qiangtui.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 155760
+                },
+                {
+                    "url": "./assets/avatar/animations/Hallo.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 212168
+                },
+                {
+                    "url": "./assets/avatar/animations/Yaotou.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 142104
+                },
+                {
+                    "url": "./assets/avatar/animations/BlowAKiss.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 151984
+                },
+                {
+                    "url": "./assets/avatar/animations/Cheering.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 218444
+                },
+                {
+                    "url": "./assets/avatar/animations/HappyIdle.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 261428
+                },
+                {
+                    "url": "./assets/avatar/animations/Singing.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 211492
+                },
+                {
+                    "url": "./assets/avatar/animations/Talking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 154696
+                },
+                {
+                    "url": "./assets/avatar/animations/Thankful.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 162968
+                },
+                {
+                    "url": "./assets/avatar/animations/Waving.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 184924
+                },
+                {
+                    "url": "./assets/avatar/animations/StartWalking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 93184
+                },
+                {
+                    "url": "./assets/avatar/animations/Running.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 107712
+                },
+                {
+                    "url": "./assets/avatar/animations/Walking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 99844
+                },
+                {
+                    "url": "./assets/avatar/animations/StopWalking.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 186784
+                },
+                {
+                    "url": "./assets/avatar/animations/TurnBack.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 129252
+                },
+                {
+                    "url": "./assets/avatar/animations/LeftTurn.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 87236
+                },
+                {
+                    "url": "./assets/avatar/animations/Idle.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 208772
+                },
+                {
+                    "url": "./assets/avatar/animations/GiftClap.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 230372
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_1.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54732
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_2.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54636
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_3.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54700
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_5.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54672
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_7.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54680
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_8.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54764
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_9.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54660
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_10.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54680
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_11.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54692
+                },
+                {
+                    "url": "./assets/avatar/animations/PHOTO_12.glb",
+                    "packName": "",
+                    "typeName": "avatar",
+                    "className": "",
+                    "skinId": "",
+                    "size": 54684
+                },
+                {
+                    "url": "./assets/level_L01.glb",
+                    "packName": "",
+                    "typeName": "MODEL",
+                    "className": "粗模",
+                    "skinId": "0000000001",
+                    "size": 3638904
+                },
+                {
+                    "url": "./assets/environment_musicfesti.env",
+                    "packName": "",
+                    "typeName": "CONFIG",
+                    "className": "环境光",
+                    "skinId": "0000000001",
+                    "size": 2723658
+                },
+                {
+                    "url": "./assets/textures/Point_Light.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 8463
+                },
+                {
+                    "url": "./assets/textures/Light_tex0.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 7478
+                },
+                {
+                    "url": "./assets/textures/Light_tex1.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 26724
+                },
+                {
+                    "url": "./assets/textures/Light_tex2.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 28517
+                },
+                {
+                    "url": "./assets/textures/VS_Disco.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 8842
+                },
+                {
+                    "url": "./assets/textures/NM_Door.png",
+                    "packName": "",
+                    "typeName": "TEXTURES",
+                    "className": "贴图",
+                    "skinId": "",
+                    "size": 271090
+                }
+            ],
+            "baseUrls": [],
+            "observeUrls": []
+        }
+    }
+}

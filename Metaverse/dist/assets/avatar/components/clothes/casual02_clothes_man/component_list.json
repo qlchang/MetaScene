@@ -1,0 +1,10 @@
+{
+    "components": {
+        "thumbnail": "",
+        "url": "meshes/casual02_clothes_man.glb",
+        "url_lod2": "meshes/casual02_clothes_man_lod2.glb",
+        "url_lod4": "meshes/casual02_clothes_man_lod4.glb"
+    },
+    "animations": [],
+    "textures": []
+}

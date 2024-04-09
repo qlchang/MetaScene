@@ -1,0 +1,10 @@
+{
+    "components": {
+        "thumbnail": "",
+        "url": "meshes/head.glb",
+        "url_lod2": "meshes/head_lod2.glb",
+        "url_lod4": "meshes/head_lod4.glb"
+    },
+    "animations": [],
+    "textures": []
+}

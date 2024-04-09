@@ -1,0 +1,29 @@
+{
+    "components": {
+        "thumbnail": "",
+        "url": "man_YXL.glb"
+    },
+    "animations": [
+        {
+            "thumbnail": "",
+            "id": "1",
+            "name": "Idle",
+            "sex": "man",
+            "url": "animations/Idle.glb"
+        },
+        {
+            "thumbnail": "",
+            "id": "2",
+            "name": "Walking",
+            "sex": "man",
+            "url": "animations/Walking.glb"
+        },
+        {
+            "thumbnail": "",
+            "id": "3",
+            "name": "Running",
+            "sex": "man",
+            "url": "animations/Running.glb"
+        }
+    ]
+}

@@ -1,0 +1,550 @@
+{
+    "components": {
+        "thumbnail": "",
+        "url": "meshes/body_man.glb",
+        "url_lod2": "meshes/body_man_lod2.glb",
+        "url_lod4": "meshes/body_man_lod4.glb"
+    },
+    "animations": [
+{
+            "thumbnail": "",
+            "id":"1",
+            "name":"Dance01",
+            "sex":"woman",
+            "url":"animations/Dance01.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"2",
+            "name":"Dance01c",
+            "sex":"woman",
+            "url":"animations/Dance01c.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"3",
+            "name":"Dance01b",
+            "sex":"woman",
+            "url":"animations/Dance01b.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"4",
+            "name":"Waving",
+            "sex":"woman",
+            "url":"animations/Waving.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"5",
+            "name":"WaveHipHopDance",
+            "sex":"woman",
+            "url":"animations/WaveHipHopDance.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"6",
+            "name":"TurnBack",
+            "sex":"woman",
+            "url":"animations/TurnBack.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"7",
+            "name":"Thankful",
+            "sex":"woman",
+            "url":"animations/Thankful.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"8",
+            "name":"Talking",
+            "sex":"woman",
+            "url":"animations/Talking.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"9",
+            "name":"Yaotou",
+            "sex":"woman",
+            "url":"animations/Yaotou.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"10",
+            "name":"Walking",
+            "sex":"woman",
+            "url":"animations/Walking.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"11",
+            "name":"Dance02",
+            "sex":"woman",
+            "url":"animations/Dance02.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"12",
+            "name":"GiftClap",
+            "sex":"woman",
+            "url":"animations/GiftClap.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"13",
+            "name":"Qiangtui",
+            "sex":"woman",
+            "url":"animations/Qiangtui.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"14",
+            "name":"Hallo",
+            "sex":"woman",
+            "url":"animations/Hallo.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"15",
+            "name":"StopWalking",
+            "sex":"woman",
+            "url":"animations/StopWalking.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"16",
+            "name":"StartWalking",
+            "sex":"woman",
+            "url":"animations/StartWalking.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"17",
+            "name":"Singing",
+            "sex":"woman",
+            "url":"animations/Singing.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"18",
+            "name":"Running",
+            "sex":"woman",
+            "url":"animations/Running.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"19",
+            "name":"RumbaDancing",
+            "sex":"woman",
+            "url":"animations/RumbaDancing.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"20",
+            "name":"PHOTO_9",
+            "sex":"woman",
+            "url":"animations/PHOTO_9.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"21",
+            "name":"PHOTO_8",
+            "sex":"woman",
+            "url":"animations/PHOTO_8.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"22",
+            "name":"PHOTO_7",
+            "sex":"woman",
+            "url":"animations/PHOTO_7.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"23",
+            "name":"PHOTO_5",
+            "sex":"woman",
+            "url":"animations/PHOTO_5.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"24",
+            "name":"PHOTO_3",
+            "sex":"woman",
+            "url":"animations/PHOTO_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"25",
+            "name":"PHOTO_2",
+            "sex":"woman",
+            "url":"animations/PHOTO_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"26",
+            "name":"PHOTO_1",
+            "sex":"woman",
+            "url":"animations/PHOTO_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"27",
+            "name":"PHOTO_12",
+            "sex":"woman",
+            "url":"animations/PHOTO_12.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"28",
+            "name":"PHOTO_11",
+            "sex":"woman",
+            "url":"animations/PHOTO_11.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"29",
+            "name":"PHOTO_10",
+            "sex":"woman",
+            "url":"animations/PHOTO_10.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"30",
+            "name":"JumpPart2",
+            "sex":"woman",
+            "url":"animations/JumpPart2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"31",
+            "name":"JumpPart1",
+            "sex":"woman",
+            "url":"animations/JumpPart1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"32",
+            "name":"Jump_all",
+            "sex":"woman",
+            "url":"animations/Jump_all.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"33",
+            "name":"Idle",
+            "sex":"woman",
+            "url":"animations/Idle.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"34",
+            "name":"HappyIdle",
+            "sex":"woman",
+            "url":"animations/HappyIdle.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"35",
+            "name":"Dance04",
+            "sex":"woman",
+            "url":"animations/Dance04.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"36",
+            "name":"Dance05",
+            "sex":"woman",
+            "url":"animations/Dance05.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"37",
+            "name":"Dance03",
+            "sex":"woman",
+            "url":"animations/Dance03.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"38",
+            "name":"Cheering",
+            "sex":"woman",
+            "url":"animations/Cheering.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"39",
+            "name":"BlowAKiss",
+            "sex":"woman",
+            "url":"animations/BlowAKiss.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"40",
+            "name":"LockingHipHopDance",
+            "sex":"woman",
+            "url":"animations/LockingHipHopDance.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"41",
+            "name":"YaotouLoop",
+            "sex":"woman",
+            "url":"animations/YaotouLoop.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"42",
+            "name":"QiangtuiLoop",
+            "sex":"woman",
+            "url":"animations/QiangtuiLoop.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"43",
+            "name":"HalloLoop",
+            "sex":"woman",
+            "url":"animations/HalloLoop.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"44",
+            "name":"JumpLoop",
+            "sex":"woman",
+            "url":"animations/JumpLoop.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"45",
+            "name":"LeftTurn",
+            "sex":"woman",
+            "url":"animations/LeftTurn.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"46",
+            "name":"Song01_1",
+            "sex":"woman",
+            "url":"animations/Song01_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"47",
+            "name":"Song01_2",
+            "sex":"woman",
+            "url":"animations/Song01_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"48",
+            "name":"Song01_3",
+            "sex":"woman",
+            "url":"animations/Song01_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"49",
+            "name":"Song02_1",
+            "sex":"woman",
+            "url":"animations/Song02_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"50",
+            "name":"Song02_2",
+            "sex":"woman",
+            "url":"animations/Song02_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"51",
+            "name":"Song02_3",
+            "sex":"woman",
+            "url":"animations/Song02_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"52",
+            "name":"Song03_1",
+            "sex":"woman",
+            "url":"animations/Song03_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"53",
+            "name":"Song03_2",
+            "sex":"woman",
+            "url":"animations/Song03_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"54",
+            "name":"Song03_3",
+            "sex":"woman",
+            "url":"animations/Song03_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"55",
+            "name":"Song04_1",
+            "sex":"woman",
+            "url":"animations/Song04_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"56",
+            "name":"Song04_2",
+            "sex":"woman",
+            "url":"animations/Song04_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"57",
+            "name":"Song04_3",
+            "sex":"woman",
+            "url":"animations/Song04_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"58",
+            "name":"Song05_1",
+            "sex":"woman",
+            "url":"animations/Song05_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"59",
+            "name":"Song05_2",
+            "sex":"woman",
+            "url":"animations/Song05_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"60",
+            "name":"Song05_3",
+            "sex":"woman",
+            "url":"animations/Song05_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"61",
+            "name":"Song06_1",
+            "sex":"woman",
+            "url":"animations/Song06_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"62",
+            "name":"Song06_2",
+            "sex":"woman",
+            "url":"animations/Song06_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"63",
+            "name":"Song06_3",
+            "sex":"woman",
+            "url":"animations/Song06_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"64",
+            "name":"Song07_1",
+            "sex":"woman",
+            "url":"animations/Song07_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"65",
+            "name":"Song07_2",
+            "sex":"woman",
+            "url":"animations/Song07_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"66",
+            "name":"Song07_3",
+            "sex":"woman",
+            "url":"animations/Song07_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"67",
+            "name":"Song08_1",
+            "sex":"woman",
+            "url":"animations/Song08_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"68",
+            "name":"Song08_2",
+            "sex":"woman",
+            "url":"animations/Song08_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"69",
+            "name":"Song08_3",
+            "sex":"woman",
+            "url":"animations/Song08_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"70",
+            "name":"Song09_1",
+            "sex":"woman",
+            "url":"animations/Song09_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"71",
+            "name":"Song09_2",
+            "sex":"woman",
+            "url":"animations/Song09_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"72",
+            "name":"Song09_3",
+            "sex":"woman",
+            "url":"animations/Song09_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"73",
+            "name":"Song10_1",
+            "sex":"woman",
+            "url":"animations/Song10_1.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"74",
+            "name":"Song10_2",
+            "sex":"woman",
+            "url":"animations/Song10_2.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"75",
+            "name":"Song10_3",
+            "sex":"woman",
+            "url":"animations/Song10_3.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"76",
+            "name":"animations_dance",
+            "sex":"woman",
+            "url":"animations/animations_dance.glb"
+        },
+        {
+            "thumbnail": "",
+            "id":"77",
+            "name":"animations_woman",
+            "sex":"woman",
+            "url":"animations/animations_woman.glb"
+        }
+],
+    "textures": []
+}
