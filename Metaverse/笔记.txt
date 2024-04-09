@@ -5,7 +5,7 @@ ActionsHandler类中，函数sendData根据用户操作发送不同的数据到�
 this.workers.dataHandle(r.data)  ——> unmarshalStream函数里，通过this.decoderWorker.postMessage(z, [D.buffer])将视频数据传输到worker
 worker里，通过self.onmessage接受到来自主线程的请求并开始执行，然后通过self.postMessage发送请求并传输数据（怀疑将视频流解析成每一帧的yuv数据）到主线程
 
-主线程通过decoderWorker.onmessage来接受来自worker的数据并执行，主要是执行函数：ReceiveDecodeMessage
+主线程通过decoderWorker.onmessage来接受来自worker的数据并执行，主要是执行函数：ReceiveDecodeMessage 
 ReceiveDecodeMessage函数里给cachedStreams/cachedMetas/cachedPtss/cachedRender赋值（每帧的yuv数据）
 
 UpdateYUV通过定时器定时运行，并读取cachedStreams的数据，如下：
